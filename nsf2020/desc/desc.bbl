@@ -1,0 +1,429 @@
+\begin{thebibliography}{10}
+
+\bibitem{anderson2}
+Greg~W. Anderson.
+\newblock Rank one elliptic {$A$}-modules and {$A$}-harmonic series.
+\newblock {\em Duke Math. J.}, 73(3):491--542, 1994.
+
+\bibitem{anderson}
+Greg~W. Anderson.
+\newblock Torsion points on {J}acobians of quotients of {F}ermat curves and
+  {$p$}-adic soliton theory.
+\newblock {\em Invent. Math.}, 118(3):475--492, 1994.
+
+\bibitem{Bakalov}
+B.~Bakalov, E.~Horozov, and M.~Yakimov.
+\newblock Bispectral algebras of commuting ordinary differential operators.
+\newblock {\em Comm. Math. Phys.}, 190(2):331--373, 1997.
+
+\bibitem{BW}
+Yuri Berest and George Wilson.
+\newblock Differential isomorphism and equivalence of algebraic varieties.
+\newblock In {\em Topology, geometry and quantum field theory}, volume 308 of
+  {\em London Math. Soc. Lecture Note Ser.}, pages 98--126. Cambridge Univ.
+  Press, Cambridge, 2004.
+
+\bibitem{boyd}
+John~P Boyd.
+\newblock Computing zeros on a real interval through chebyshev expansion and
+  polynomial rootfinding.
+\newblock {\em SIAM Journal on Numerical Analysis}, 40(5):1666--1682, 2002.
+
+\bibitem{buchweitz}
+Ragnar-Olaf Buchweitz, Graham~J. Leuschke, and Michel Van~den Bergh.
+\newblock Non-commutative desingularization of determinantal varieties {I}.
+\newblock {\em Invent. Math.}, 182(1):47--115, 2010.
+
+\bibitem{burban}
+Igor Burban and Yuriy Drozd.
+\newblock Tilting on non-commutative rational projective curves.
+\newblock {\em Math. Ann.}, 351(3):665--709, 2011.
+
+\bibitem{burban2}
+Igor Burban and Bernd Kreussler.
+\newblock Fourier-{M}ukai transforms and semi-stable sheaves on nodal
+  {W}eierstra\ss cubics.
+\newblock {\em J. Reine Angew. Math.}, 584:45--82, 2005.
+
+\bibitem{burchnall}
+J.~L. Burchnall and T.~W. Chaundy.
+\newblock Commutative {O}rdinary {D}ifferential {O}perators.
+\newblock {\em Proc. London Math. Soc. (2)}, 21:420--440, 1923.
+
+\bibitem{Cafasso}
+Mattia Cafasso and Chao-Zhong Wu.
+\newblock Tau functions and the limit of block {T}oeplitz determinants.
+\newblock {\em Int. Math. Res. Not. IMRN}, (20):10339--10366, 2015.
+
+\bibitem{calderon}
+C.~Calder{\'o}n, Y.~Gonz{\'a}lez, I.~Pacharoni, S.~Simondi, and I.~Zurri{\'a}n.
+\newblock $2\times 2$ hypergeometric operators with diagonal eigenvalues.
+\newblock {\em Journal of Approximation Theory}, 248, 2019.
+
+\bibitem{casperthesis}
+W.~Riley Casper.
+\newblock {\em Bispectral Operator Algebras}.
+\newblock PhD thesis, 2017.
+
+\bibitem{casper2017}
+W.~Riley Casper.
+\newblock Elementary examples of solutions to {B}ochner's problem for matrix
+  differential operators.
+\newblock {\em Journal of Approximation Theory}, 229:36--71, 2018.
+
+\bibitem{casper2019}
+W~Riley Casper.
+\newblock The symmetric $2\times 2$ hypergeometric matrix differential
+  operators.
+\newblock {\em arXiv preprint arXiv:1907.12703}, 2019.
+
+\bibitem{CGYZ}
+W.~Riley Casper, F.~Alberto Gr{\"u}nbaum, Milen~T. Yakimov, and Ignacio
+  Zurri{\'a}n.
+\newblock Reflective prolate-spheroidal operators and the {KP/KdV} equations.
+\newblock {\em Proc. of the Nat. Acad. of Sci. (PNAS)}, 2019.
+
+\bibitem{CGYZ2}
+W.~Riley Casper, F.~Alberto Gr{\"u}nbaum, Milen~T. Yakimov, and Ignacio
+  Zurri{\'a}n.
+\newblock Reflective prolate-spheroidal operators and the adelic grassmannian.
+\newblock {\em submitted, arXiv preprint arXiv:2003.11616}, 2020.
+
+\bibitem{CHIY}
+W.~Riley Casper, Emil Horozov, Plamen Iliev, and Milen~T. Yakimov.
+\newblock A burchnall-chaundy-krichever theory for fractional differential
+  operators.
+\newblock {\em in preparation}, 2020.
+
+\bibitem{casper2020}
+W.~Riley Casper, Stefan {Kolb}, and Milen~T. {Yakimov}.
+\newblock {Bivariate Continuous q-Hermite Polynomials and Deformed Quantum
+  Serre Relations}.
+\newblock {\em Journal of Algebra and its Applications (to appear)}, 2020.
+
+\bibitem{CY2019}
+W.~Riley Casper and Milen~T. {Yakimov}.
+\newblock {Integral operators, bispectrality and growth of Fourier algebras}.
+\newblock {\em J. Reine Angew. Math. (Crelle's Journal)}, doi:
+  10.1515/crelle-2019-0031, 2019.
+
+\bibitem{CY2018}
+W.~Riley Casper and Milen~T. Yakimov.
+\newblock The matrix {B}ochner problem.
+\newblock {\em American Journal of Mathematics (to appear) arXiv preprint
+  arXiv:1803.04405}, 2020.
+
+\bibitem{Casselman}
+William Casselman and Dragan Mili\v{c}i\'{c}.
+\newblock Asymptotic behavior of matrix coefficients of admissible
+  representations.
+\newblock {\em Duke Math. J.}, 49(4):869--930, 1982.
+
+\bibitem{castro2006}
+Mirta~M. Castro and F.~Alberto Gr\"unbaum.
+\newblock The algebra of differential operators associated to a family of
+  matrix-valued orthogonal polynomials: five instructive examples.
+\newblock {\em Int. Math. Res. Not.}, pages Art. ID 47602, 33, 2006.
+
+\bibitem{CI}
+Daniel Chan and Colin Ingalls.
+\newblock Non-commutative coordinate rings and stacks.
+\newblock {\em Proc. London Math. Soc. (3)}, 88(1):63--88, 2004.
+
+\bibitem{deano}
+Alfredo Dea{\~n}o, Bruno Eijsvoogel, and Pablo Rom{\'a}n.
+\newblock Ladder relations for a class of matrix-valued orthogonal polynomials.
+\newblock {\em arXiv preprint arXiv:1907.07447}, 2020.
+
+\bibitem{drinfeld}
+V.~G. Drinfel'd.
+\newblock Elliptic modules.
+\newblock {\em Mat. Sb. (N.S.)}, 94(136):594--627, 656, 1974.
+
+\bibitem{DG86}
+J~J Duistermaat and F~A Gr{\"{u}}nbaum.
+\newblock {Differential equations in the spectral parameter}.
+\newblock {\em Comm. Math. Phys.}, 103(2):177--240, 1986.
+
+\bibitem{duran2004}
+Antonio~J. Dur\'an and F.~Alberto Gr\"unbaum.
+\newblock Orthogonal matrix polynomials satisfying second-order differential
+  equations.
+\newblock {\em Int. Math. Res. Not.}, (10):461--484, 2004.
+
+\bibitem{duran2005c}
+Antonio~J. Dur\'an and F.~Alberto Gr\"unbaum.
+\newblock A survey on orthogonal matrix polynomials satisfying second order
+  differential equations.
+\newblock {\em J. Comput. Appl. Math.}, 178(1-2):169--190, 2005.
+
+\bibitem{Fuchs64}
+W.~H.~J. {Fuchs}.
+\newblock {On the eigenvalues of an integral equation arising in the theory of
+  band-limited signals.}
+\newblock {\em {J. Math. Anal. Appl.}}, 9:317--330, 1964.
+
+\bibitem{gangolli}
+Ramesh Gangolli and V.~S. Varadarajan.
+\newblock {\em Harmonic analysis of spherical functions on real reductive
+  groups}, volume 101 of {\em Ergebnisse der Mathematik und ihrer Grenzgebiete
+  [Results in Mathematics and Related Areas]}.
+\newblock Springer-Verlag, Berlin, 1988.
+
+\bibitem{GL}
+Werner Geigle and Helmut Lenzing.
+\newblock A class of weighted projective curves arising in representation
+  theory of finite-dimensional algebras.
+\newblock In {\em Singularities, representation of algebras, and vector bundles
+  ({L}ambrecht, 1985)}, volume 1273 of {\em Lecture Notes in Math.}, pages
+  265--297. Springer, Berlin, 1987.
+
+\bibitem{GG}
+I.~M. Gelfand and M.~I. Graev.
+\newblock Finite-dimensional irreducible representations of the unitary and
+  complete linear group and special functions associated with them.
+\newblock {\em Izv. Akad. Nauk SSSR Ser. Mat.}, 29:1329--1356, 1965.
+
+\bibitem{Gelfand}
+Israel Gelfand, Sergei Gelfand, Vladimir Retakh, and Robert~Lee Wilson.
+\newblock Quasideterminants.
+\newblock {\em Adv. Math.}, 193(1):56--141, 2005.
+
+\bibitem{gritzmann}
+Peter Gritzmann.
+\newblock Discrete tomography: From battleship to nanotechnology.
+\newblock {\em Mathematics Everywhere}, pages 81--98, 2010.
+
+\bibitem{GP}
+F.~A. Gr\"{u}nbaum, I.~Pacharoni, and J.~Tirao.
+\newblock Matrix valued spherical functions associated to the complex
+  projective plane.
+\newblock {\em J. Funct. Anal.}, 188(2):350--441, 2002.
+
+\bibitem{GPZ}
+F.~A. Gr\"{u}nbaum, I.~Pacharoni, and I.~Zurri\'{a}n.
+\newblock Bispectrality and time-band-limiting: Matrix valued polynomials.
+\newblock {\em International Mathematics Research Notices},
+  10.1093/imrn/rny140, 6 2018.
+
+\bibitem{GP2}
+F.~Alberto Gr\"unbaum, In\'es Pacharoni, and Juan Tirao.
+\newblock An invitation to matrix-valued spherical functions: linearization of
+  products in the case of complex projective space {$P_2({\Bbb C})$}.
+\newblock In {\em Modern signal processing}, volume~46 of {\em Math. Sci. Res.
+  Inst. Publ.}, pages 147--160. Cambridge Univ. Press, Cambridge, 2004.
+
+\bibitem{grunbaum2005}
+F.~Alberto Gr\"unbaum, In\'es Pacharoni, and Juan Tirao.
+\newblock Matrix valued orthogonal polynomials of {J}acobi type: the role of
+  group representation theory.
+\newblock {\em Ann. Inst. Fourier (Grenoble)}, 55(6):2051--2068, 2005.
+
+\bibitem{grunbaum2017}
+F.~Alberto Gr{\"u}nbaum, In{\'e}s Pacharoni, and Ignacio Zurri{\'a}n.
+\newblock Time and band limiting for matrix-valued functions: an integral and a
+  commuting differential operator.
+\newblock {\em Inverse Problems}, 33(2), 2017.
+
+\bibitem{grunbaum2007b}
+F.~Alberto Gr\"unbaum and Juan Tirao.
+\newblock The algebra of differential operators associated to a weight matrix.
+\newblock {\em Integral Equations Operator Theory}, 58(4):449--475, 2007.
+
+\bibitem{Grunbaum-CMP2018}
+F.~Alberto Gr\"{u}nbaum, Luc Vinet, and Alexei Zhedanov.
+\newblock Algebraic {H}eun operator and band-time limiting.
+\newblock {\em Comm. Math. Phys.}, 364(3):1041--1068, 2018.
+
+\bibitem{grunbaum2015}
+F.~Alberto et~al. Gr{\"u}nbaum.
+\newblock Time and band limiting for matrix-valued functions, an example.
+\newblock {\em SIGMA: Symmetry, Integrability and Geometry: Methods and
+  Applications}, 11:44, 2015.
+
+\bibitem{ismail}
+M.~Ismail, E.~Koelink, and P~Rom\'{a}n.
+\newblock Matrix-valued hermite polynomials, burchnall formulas and the
+  non-abelian toda lattice.
+\newblock {\em Advances in Applied Mathematics}, 110:235--269, 2019.
+
+\bibitem{JMMS80}
+Michio {Jimbo}, Tetsuji {Miwa}, Yasuko {M\^ori}, and Mikio {Sato}.
+\newblock {Density matrix of an impenetrable Bose gas and the fifth Painlev\'e
+  transcendent.}
+\newblock {\em {Physica D}}, 1(1):80--158, 1980.
+
+\bibitem{JMMS}
+Michio {Jimbo}, Tetsuji {Miwa}, Yasuko {M\^ori}, and Mikio {Sato}.
+\newblock {Density matrix of an impenetrable Bose gas and the fifth Painlev\'e
+  transcendent.}
+\newblock {\em {Physica D}}, 1(1):80--158, 1980.
+
+\bibitem{KRR}
+Erik Koelink, Ana~M. de~los R\'{\i}os, and Pablo Rom\'{a}n.
+\newblock Matrix-valued {G}egenbauer-type polynomials.
+\newblock {\em Constr. Approx.}, 46(3):459--487, 2017.
+
+\bibitem{KPR}
+Erik Koelink, Maarten van Pruijssen, and Pablo Rom\'{a}n.
+\newblock Matrix-valued orthogonal polynomials related to {$({\rm
+  SU}(2)\times{\rm SU}(2),{\rm diag})$}.
+\newblock {\em Int. Math. Res. Not. IMRN}, (24):5673--5730, 2012.
+
+\bibitem{Kontsevich}
+Maxim Kontsevich.
+\newblock Intersection theory on the moduli space of curves and the matrix
+  {A}iry function.
+\newblock {\em Comm. Math. Phys.}, 147(1):1--23, 1992.
+
+\bibitem{Krein}
+M.~Kre\u\i{n}.
+\newblock Infinite {$J$}-matrices and a matrix-moment problem.
+\newblock {\em Doklady Akad. Nauk SSSR (N.S.)}, 69:125--128, 1949.
+
+\bibitem{krichever}
+Igor~Moiseevich Krichever.
+\newblock Methods of algebraic geometry in the theory of nonlinear equations.
+\newblock {\em Uspehi Mat. Nauk}, 32(6(198)):183--208, 287, 1977.
+
+\bibitem{krichever1995}
+I.M. Krichever.
+\newblock General rational reductions of the kp hierarchy and their symmetries.
+\newblock {\em Functional Analysis and its Applications}, 29(2):75--80, 1995.
+
+\bibitem{Mehta}
+Madan~Lal Mehta.
+\newblock {\em Random matrices}, volume 142.
+\newblock Elsevier, 3 edition, 2004.
+
+\bibitem{mulase}
+Motohico Mulase.
+\newblock Algebraic theory of the {KP} equations.
+\newblock In {\em Perspectives in mathematical physics}, Conf. Proc. Lecture
+  Notes Math. Phys., III, pages 151--217. Int. Press, Cambridge, MA, 1994.
+
+\bibitem{zurrian2016}
+In\'es Pacharoni and Ignacio Zurri\'an.
+\newblock Matrix {G}egenbauer polynomials: the {$2\times2$} fundamental cases.
+\newblock {\em Constr. Approx.}, 43(2):253--271, 2016.
+
+\bibitem{reiner}
+I.~Reiner.
+\newblock {\em Maximal orders}.
+\newblock Academic Press [A subsidiary of Harcourt Brace Jovanovich,
+  Publishers], London-New York, 1975.
+\newblock London Mathematical Society Monographs, No. 5.
+
+\bibitem{Schiffmann}
+Olivier Schiffmann.
+\newblock Noncommutative projective curves and quantum loop algebras.
+\newblock {\em Duke Math. J.}, 121(1):113--168, 2004.
+
+\bibitem{schur}
+J~Schur.
+\newblock ber vertauschbare lineare differentialausdrcke.
+\newblock {\em Sitzungsber. Berl. Math. Ges}, 4:28, 1905.
+
+\bibitem{SW}
+Graeme Segal and George Wilson.
+\newblock Loop groups and equations of {K}d{V} type [ {MR}0783348 (87b:58039)].
+\newblock In {\em Surveys in differential geometry: integral systems
+  [integrable systems]}, volume~4 of {\em Surv. Differ. Geom.}, pages 403--466.
+  Int. Press, Boston, MA, 1998.
+
+\bibitem{shannon1}
+Claude~Elwood Shannon.
+\newblock A mathematical theory of communication.
+\newblock {\em Bell System Technical Journal}, 27(3):379--423, 1948.
+
+\bibitem{shannon2}
+Claude~Elwood Shannon.
+\newblock A mathematical theory of communication.
+\newblock {\em Bell System Technical Journal}, 27(4):623--666, 1948.
+
+\bibitem{shiota}
+Takahiro Shiota.
+\newblock Characterization of {J}acobian varieties in terms of soliton
+  equations.
+\newblock {\em Invent. Math.}, 83(2):333--382, 1986.
+
+\bibitem{simons}
+Frederik~J Simons, FA~Dahlen, and Mark~A Wieczorek.
+\newblock Spatiospectral concentration on a sphere.
+\newblock {\em SIAM review}, 48(3):504--536, 2006.
+
+\bibitem{Slepian65}
+D.~{Slepian}.
+\newblock {Some asymptotic expansions for prolate spheroidal wave functions.}
+\newblock {\em {J. Math. Phys., Mass. Inst. Techn.}}, 44:99--140, 1965.
+
+\bibitem{tirao2011}
+Juan Tirao.
+\newblock The algebra of differential operators associated to a weight matrix:
+  a first example.
+\newblock In {\em Groups, algebras and applications}, volume 537 of {\em
+  Contemp. Math.}, pages 291--324. Amer. Math. Soc., Providence, RI, 2011.
+
+\bibitem{Tirao}
+Juan~A. Tirao.
+\newblock Spherical functions.
+\newblock {\em Rev. Un. Mat. Argentina}, 28(2):75--98, 1976/77.
+
+\bibitem{TW1}
+Craig~A. Tracy and Harold Widom.
+\newblock Fredholm determinants, differential equations and matrix models.
+\newblock {\em Comm. Math. Phys.}, 163(1):33--72, 1994.
+
+\bibitem{TW2}
+Craig~A. Tracy and Harold Widom.
+\newblock Level-spacing distributions and the {A}iry kernel.
+\newblock {\em Comm. Math. Phys.}, 159(1):151--174, 1994.
+
+\bibitem{vdb}
+Michel Van~den Bergh.
+\newblock Three-dimensional flops and noncommutative rings.
+\newblock {\em Duke Math. J.}, 122(3):423--455, 2004.
+
+\bibitem{V}
+N.~Ja. Vilenkin.
+\newblock {\em Special functions and the theory of group representations}.
+\newblock Translated from the Russian by V. N. Singh. Translations of
+  Mathematical Monographs, Vol. 22. American Mathematical Society, Providence,
+  R. I., 1968.
+
+\bibitem{Wilson}
+George Wilson.
+\newblock Bispectral commutative ordinary differential operators.
+\newblock {\em J. Reine Angew. Math.}, 442:177--204, 1993.
+
+\bibitem{Wilson98}
+George Wilson.
+\newblock Collisions of {C}alogero-{M}oser particles and an adelic
+  {G}rassmannian.
+\newblock {\em Invent. Math.}, 133(1):1--41, 1998.
+\newblock With an appendix by I. G. Macdonald.
+
+\bibitem{wilson2015notes}
+George Wilson.
+\newblock Notes on the vector adelic grassmannian.
+\newblock {\em arXiv preprint arXiv:1507.00693}, 2015.
+
+\bibitem{wilson1992}
+George Wison.
+\newblock On the antiplectic pair connected to the adler-gel'fand-dikii
+  bracket.
+\newblock {\em Nonlinearity}, 5(1):109, 1992.
+
+\bibitem{zurrian2016algebra}
+Ignacio Zurri{\'a}n.
+\newblock The algebra of differential operators for a matrix weight: An
+  ultraspherical example.
+\newblock {\em International Mathematics Research Notices}, 2017(8):2402--2430,
+  2016.
+
+\bibitem{zygmunt}
+Marcin~J Zygmunt.
+\newblock Matrix chebyshev polynomials and continued fractions.
+\newblock {\em Linear algebra and its applications}, 340(1-3):155--168, 2002.
+
+\end{thebibliography}

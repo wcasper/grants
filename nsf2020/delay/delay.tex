@@ -1,0 +1,55 @@
+
+%%%%%%%%% MASTER -- compiles the 6 sections
+
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\bibliographystyle{plain}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{enumerate}
+
+\theoremstyle{definition}
+\newtheorem{goal}{Project Goal}
+\newtheorem{subgoal}{Subgoal}[goal]
+\newtheorem{thm}{Theorem}
+\newtheorem{quest}{Question}
+
+\newcommand{\bbr}{\mathbb{R}}
+\newcommand{\bbc}{\mathbb{C}}
+\newcommand{\vocab}[1]{\textbf{#1}}
+
+\pagestyle{empty}
+%\includeonly{NSFsumm}
+
+\begin{document}
+
+\required{Special Exception to the Deadline Date Policy}
+\begin{center}
+William Riley Casper
+\end{center}
+
+The PI obtained permission from the NSF Program Officer, Andrew Pollington, to have a one week extension to the submission deadline for NSF PD 10-1264 on Algebra and Number Theory due to delays associated with the COVID-19 pandemic.
+The PI is including a copy of the email granting the extension in the Single Copy Document section on FastLane.
+
+\end{document}
+

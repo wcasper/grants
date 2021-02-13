@@ -1,0 +1,114 @@
+
+%%%%%%%%% MASTER -- compiles the 6 sections
+
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\bibliographystyle{plain}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+\usepackage{titlesec}
+\titleformat{\subsubsection}[runin]{\normalfont\bfseries}{\thesubsection}{0.5em}{}[.]
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+\newtheorem*{goal*}{Project Goal}
+\newtheorem{goal}{Project Goal}
+\newtheorem{subgoal}{Subgoal}[goal]
+\newtheorem{thm}{Theorem}
+\newtheorem{quest}{Question}
+\newtheorem{prob}{Problem}
+\newtheorem{defn}{Definition}
+
+\newcommand{\bbr}{\mathbb{R}}
+\newcommand{\bbc}{\mathbb{C}}
+\newcommand{\bbd}{\mathbb{D}}
+\newcommand{\bbp}{\mathbb{P}}
+\newcommand{\bbt}{\mathbb{T}}
+\newcommand{\bbn}{\mathbb{N}}
+\newcommand{\bbz}{\mathbb{Z}}
+\newcommand{\vocab}[1]{\emph{#1}}
+\newcommand{\Ai}{\text{Ai}}
+\newcommand{\Be}{\text{Be}}
+\newcommand{\wt}{\widetilde}
+\newcommand{\End}{\text{End}}
+\newcommand{\triv}{\text{triv}}
+\newcommand{\Coh}{\text{Coh}}
+\newcommand{\Jac}{\text{Jac}}
+\newcommand{\Tau}{\mathcal{T}}
+\newcommand{\Aut}{\text{Aut}}
+\newcommand{\Gr}{\text{Gr}}
+\newcommand{\coker}{\text{coker}}
+\newcommand{\diff}{\backslash}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\id}{\text{id}}
+\newcommand{\mdet}{\text{mdet}}
+\newcommand{\qdet}{\text{qdet}}
+\pagestyle{empty}
+%\includeonly{NSFsumm}
+
+\begin{document}
+
+\begin{center}
+\required{Budget Justification}
+William Riley Casper
+\end{center}
+
+\section{A.1. Senior Personnel}
+Two months summer salary for the PI, with an anticipated $4\%$ annual increase.
+The anticipated $4\%$ increase will be applied to the PI's current salary in the first year.
+
+\section{C. Fringe Benefits.}
+The California State University anticipated FY2020 fringe benefit rate is $42\%$.
+
+\section{E.1. Travel -- Domestic.}
+Travel expenses for the PI to visit collaborators and other researchers for discussion and advice on the proposed work: for example F. Alberto Gr\"unbaum (UC Berkeley), Alexander Polishchuk (U Oregon), Max Lieblich (UW Seattle), and Plamen Iliev (Georgia Tech).
+%, Balu Nadiga (Los Alamos National Lab).
+The funding is also meant to cover espenses to domestic conferences.
+The PI estimates six domestic trips per year.
+
+\section{E.2. Travel -- International.}
+Travel expenses for the PI to visit international researchers for collaboration and advice: for example Erik Koelink (Radboud University, Netherlands), Emil Horozov (University of Sofia, Bulgaria), Boris Shapiro (Stockholm University, Sweden), Pablo Roma\'an (University of Cordoba, Argentina), Ignacio Zurri\'an (University of Cordoba, Argentina), Manuel de la Iglesia (UNAM, Mexico), and Walter Van Assche (Leuven, Belgium).
+Funds are also intended to cover travel expenses for international conferences to present research.
+This includes travel to participate in a summer school affiliated with Radboud University and KU Leuven on orthogonal polynomials and special functions in 2021 and present research at OPSFA in 2021 and 2023, among other anticipated invited talks.
+The PI estimates three international trips per year, contingent on travel limitations imposed by the COVID-19 pandemic.
+
+\section{G.1. Other Direct Costs.  Materials and Supplies.}
+Minimal expenditures for research-related books and supplies ($\$1,000$ per year).  An additional $\$3,000$ is budgeted in the first year for a computer purchase to facilitate numerical computations as part of project research.
+
+\section{Indirect Costs.}
+The CSUF indirect cost rate is $42\%$ of the base.
+\begin{center}
+\begin{tabular}{ccc}\hline
+Year   & Base Amount & Indirect Cost Amount\\\hline
+$1$    & $\$28,973$  & $\$13,907$\\
+$2$    & $\$26,652$  & $\$12,793$\\
+$3$    & $\$27,357$  & $\$13,131$\\\hline
+Total  & $\$82,982$  & $\$39,831$\\\hline
+\end{tabular}
+\end{center}
+
+\newpage
+\bibliography{desc}
+
+\end{document}

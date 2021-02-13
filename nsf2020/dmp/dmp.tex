@@ -1,0 +1,58 @@
+
+%%%%%%%%% MASTER -- compiles the 6 sections
+
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\bibliographystyle{plain}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{enumerate}
+
+\theoremstyle{definition}
+\newtheorem{goal}{Project Goal}
+\newtheorem{subgoal}{Subgoal}[goal]
+\newtheorem{thm}{Theorem}
+\newtheorem{quest}{Question}
+
+\newcommand{\bbr}{\mathbb{R}}
+\newcommand{\bbc}{\mathbb{C}}
+\newcommand{\vocab}[1]{\textbf{#1}}
+
+\pagestyle{empty}
+%\includeonly{NSFsumm}
+
+\begin{document}
+
+\required{Data Management Plan}
+\begin{center}
+William Riley Casper
+\end{center}
+
+According to the NSF Division of Mathematical Sciences (DMS) advice to PI's on Data Management Plans, for many proposals to the DMS a statement that no data management plan is necessary will suffice, provided that a clear justification of the claim is given.
+
+The PI feels that this advice is pertinent to the current proposal due to the fact that the proposed research involves little data external to the mathematical results themselves.  These results will be communicated to the mathematics community through publication in journals and on the arXiv.
+
+In addition the PI has authored certain python libraries to aid in the research project, and expects to add to this code base as the research continues.  The PI will make this code available both on his personal webpage and will submit it as a contribution to the Sympy python math library and Sage.  The PI will similarly share any additional source code deemed interesting or useful to the research community.
+
+\end{document}
+

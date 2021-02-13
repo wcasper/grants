@@ -1,0 +1,547 @@
+
+%%%%%%%%% MASTER -- compiles the 6 sections
+
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\bibliographystyle{plain}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+\usepackage{titlesec}
+\titleformat{\subsubsection}[runin]{\normalfont\bfseries}{\thesubsection}{0.5em}{}[.]
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{enumerate}
+\usepackage{comment}
+\usepackage[margin=1.0in]{geometry}
+
+\newtheorem*{goal*}{Project}
+\newtheorem{goal}{Project}
+\newtheorem{ugoal}{Undergraduate Project}
+\newtheorem{subgoal}{Subproject}[goal]
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}
+\newtheorem{quest}{Question}
+\newtheorem{prob}{Problem}
+\newtheorem*{prob*}{Problem}
+\newtheorem{defn}{Definition}
+\newtheorem{ex}{Example}
+
+\newcommand{\bbr}{\mathbb{R}}
+\newcommand{\bbc}{\mathbb{C}}
+\newcommand{\bbd}{\mathbb{D}}
+\newcommand{\bbp}{\mathbb{P}}
+\newcommand{\bbt}{\mathbb{T}}
+\newcommand{\bbn}{\mathbb{N}}
+\newcommand{\bbz}{\mathbb{Z}}
+\newcommand{\vocab}[1]{\emph{#1}}
+\newcommand{\Ai}{\text{Ai}}
+\newcommand{\Be}{\text{Be}}
+\newcommand{\wt}{\widetilde}
+\newcommand{\End}{\text{End}}
+\newcommand{\triv}{\text{triv}}
+\newcommand{\Coh}{\text{Coh}}
+\newcommand{\Jac}{\text{Jac}}
+\newcommand{\Tau}{\mathcal{T}}
+\newcommand{\Aut}{\text{Aut}}
+\newcommand{\Gr}{\text{Gr}}
+\newcommand{\coker}{\text{coker}}
+\newcommand{\diff}{\backslash}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\id}{\text{id}}
+\newcommand{\mdet}{\text{mdet}}
+\newcommand{\qdet}{\text{qdet}}
+\newcommand{\tr}{\text{tr}}
+%\pagestyle{empty}
+%\includeonly{NSFsumm}
+
+\begin{document}
+
+\begin{center}
+\required{Project Description}
+William Riley Casper
+\end{center}
+
+\section{Intellectual merit}
+In the algebraic theory of the Kadomtsev-Petviashvili (KP) equation, algebraic geometry is used to produce expressions for exact solutions $u(x,y,t)$ of the KP equation
+\begin{equation}
+u_{xt} + uu_x + \epsilon u_{xxx} \pm u_{yy} = 0,
+\end{equation}
+and more generally solutions of a system of nonlinear partial differential equations called the KP hierarchy.
+The KP equation arises naturally in geophysical fluid dynamics and, incredibly, in algebraic geometry via Shiota's solution of the Schottky problem \cite{shiota}.
+
+Solutions of the KP hierarchy are determined by the orbits of points in an infinite dimensional space, Sato's grassmannian $\Gr$, under the action of a loop group.
+Special ``geometric" points of Sato's grassmannian have finite dimensional orbits, and the assocated action may be redescribed in terms of the action of an abelian variety.  Specifically, Krichever correspondence associates a geometric point of $\Gr$ to a vector bundle on an algebraic curve, creating explicit solutions of the KP equation in terms of theta functions.
+Motivated by these connections, the proposed research project will discover new applications of integrable systems to noncommutative algebra and algebraic geometry and vice versa, expanding on recent results of the PI which fit the same theme \cite{CGYZ2,CGYZ,CY2019,CY2018}.
+With Sato's grassmannian as our centerpiece, we will interpret classes of geometric and nongeometric points in a variety of ways: as integral operators, as commutative families of fractional differential operators, and as Darboux transformations.  In the first project, the KP dynamics will inform our study of the spectral theory of integral operators, allowing us to discover a new, universal description of the spectral data of prolate-spheroidal integral operators.
+The second project will follow up by describing new solutions of the KP hierarchy involving non-geometric points interpreted as commuting algebras of fractional differential operators.
+Finally, the third project will explore a vector-valued adelic-type grassmannian as a classifying space of noncommutative bispectral Darboux transformations of orthogonal matrix polynomials.
+
+%The interplay between noncommutative algebra, algebraic geometry, and integrable systems has proved to be fertile soil for many sudden leaps of progress in all three fields.
+%Examples include Van den Bergh's proof of the equivalence of the derived categories of threefolds related by a flop \cite{vdb}, Artin and Mumford's construction of a nonrational unirational threefold \cite{artin}, Krichever's construction of solutions to the Kadomtsev-Petviashvili (KP) equation equation via algebraic curves \cite{krichever}, and Shiota's solution of the Schottky problem \cite{shiota}.
+%Thematically, these advances arise by attaching a natural noncommutative algebra to an otherwise classical and commutative problem and encoding the properties of the original problem in a noncommutative form.
+
+
+We begin with a list of synopses of the three interconnected projects of the proposal, along with their intellectural merit.
+Following this, the next three sections will describe each project goal in more detail, specifically addressing its context, significance, and the proposed plan of attack.
+Lastly, we will discuss broader impacts, including multiple research projects related to the main research projects and involving undergraduate collaborators.
+\subsection{Project goals in brief}
+\subsubsection*{Commuting integral and differential operators}
+The first project considers some novel applications of noncommutative algebra and algebraic geometry to integral operators arising in integrable systems.
+An integral operator is said to have the \vocab{prolate spheroidal property} if it commutes with a nonconstant differential operator.  They appear in connection with communication theory \cite{shannon1,shannon2}, random matrix theory \cite{Mehta,TW1,TW2}, and Painlev\'e V \cite{JMMS80}.
+Empirically, such operators were observed to have kernels constructed from functions $\psi(x,z)$ having the \vocab{bispectral} property \cite{DG86} of being simultaneously a family of eigenfunctions of a differential operator in variable $x$ and a differential operator in the spectral variable $z$.
+It was conjectured in the mid 1980's that in general operators with bispectrally manufactured kernels should have the prolate spheroidal property.
+
+In recent work \cite{CGYZ,CGYZ2,CY2019} the PI and his collaborators prove this long-standing conjecture for symmetric bispectral functions of rank $1$ and $2$, constructing a wide class of integral operators with the prolate spheroidal property.  Specifically to every symmetric bispectral meromorphic function $\psi(x,y)$ of low rank, we define an integral operator
+$$(T_\psi f)(z) = \int_{\Gamma_1}K_\psi(z,w)f(w)dw,\ \ \text{for}\ \ K_\psi(z,w) = \int_{\Gamma_2} \psi(x,z)\psi(x,w)dx,$$
+where here $\Gamma_1,\Gamma_2$ are sufficiently nice paths in $\bbc$.
+
+The key object of our recent results is the \vocab{Fourier algebra} of $\psi(x,z)$, which in the rational situation is isomorphic to the algebra of differential operators on a line bundle over a \emph{singular} rational curve.
+We prove that $T_\psi$ commutes with a differential operator in the \vocab{Fourier algebra} of $\psi(x,z)$, a certain natural noncommutative bigraded algebra of differential operators associated with $\psi(x,z)$ \cite{CY2019}.
+We also obtain a novel property of \vocab{reflectively commuting} integral and differential operators \cite{CGYZ,CGYZ2}, which reduces to the usual commuting property in the case that $\psi(x,z)$ is fixed under a sign involution.
+These bispectral meromorphic functions are in turn parametrized by symmetric points of Wilson's adelic grassmannian, the Bessel adelic grassmannian, and the Airy adelic grassmannian \cite{Bakalov,Wilson}.
+
+Tracy and Widom exploit the prolate spheroidal property to perform a spectral analysis of integral operators defined in terms of Airy and Bessel kernels by considering the spectra of an associated commuting differential operator \cite{TW1,TW2}.
+The first project is to perform a similar analysis for the family of integral operators parameterized by an adelic grassmannian \emph{simultaneously}.
+\begin{goal}
+Obtain a universal description of the spectral data of integral operators commuting with differential operators and leverage it in the study of random matrices.
+\end{goal}
+\noindent The explicit components of this project are the following.
+\begin{subgoal}
+Determine the explicit evolution of the lowest order differential operator $\mathfrak d_\psi$ commuting with $T_\psi$ as $\psi$ follows a Calogero-Moser flow, for all $\psi(x,z)$ in the Lagrangian locus of an adelic grassmannian.
+\end{subgoal}
+\begin{subgoal}
+Using the explicit dependence of $\mathfrak d_\psi$ on $T_\psi$ along a flow, obtain explicit estimates of the asymptotic behavior of eigenvalues of $T_\psi$ via WKB theory.
+\end{subgoal}
+The advantage of a universal description is a natural relation between the spectral data of integral operators corresponding to points in the adelic grassmannian and dynamics of KP-flows.
+This is particularly alluring from the point of view of random matrices, since the spectral data of the integral operators should describe the distribution of eigenvalues of random matrices satisfying certain probability distributions.
+For extended details see Section \ref{sec:integral differential}.
+
+
+\subsubsection*{Integrable Systems and Commuting Fractional Differential Operators}
+The second project considers a new expansion of the algebraic theory of commuting differential operators, including Burchnall-Chaundy theory and Krichever correspondence, to the skew-field of fractional differential operators.
+Here by a fractional differential operator we mean a formal element $\mathfrak a^{-1}\mathfrak b$ of the skew-field of fractions of differential operators.
+This skew field may be realized as a subfield of the ring of pseudodifferential operators in a single variable.
+
+Krichever correspondence is a correspondence between line bundles on algebraic curves and commutative algebras of differential operators.   More formally, this is a categorical equivalence between so-called Krichever quintuples and Schur pairs, as described in Section \ref{sec:commuting fractional} below.  In very recent work \cite{CHIY}, the PI and his collaborators are extending Krichever correspondence to commutative algebras of fractional differential operators.  On the geometric side, this new correspondence includes the data of a section $\chi: J^\infty(\pi)\rightarrow E$ of the dual of the jet bundle $J^\infty(\pi)$ of a vector bundle $\pi: E\rightarrow X$ on an analytic neighborhood of an algebraic curve $X$.
+Notably, our extension currenly only applies to commuting algebras of rank $1$, where rank is defined as the greatest common divisor of the orders of the commuting operators in the algebra.
+
+In the classical case, the KP evolution of a family of commuting differential operators is identified with the orbits of Krichever quintuples under a natural action of the Jacobian of an associated algebraic curve.
+Consequently, the associated solutions of the KP hierarchy have exact expressions in terms of Jacobi theta functions.
+The primary goal of this project is to generalize this result and obtain new, exact expressions for solutions of the KP hierarchy via algebro-geometric data.
+\begin{goal}
+Obtain explicit solutions to the KP hierarchy encoded in terms of the action of a Jacobian on sections of the dual of a jet bundle on an algebraic curve.
+\end{goal}
+\noindent The explicit components of this project are the following.
+\begin{subgoal}
+Extend the Krichever correspondence to commuting algebras of differential operators of higher rank.
+\end{subgoal}
+\begin{subgoal}
+Describe the grassmannian of fractional differential operators associated to jet bundle data on rational curves as a natural extension of the adelic grassmannian and therefore a natural generalization of Calogero-Moser space.
+Describe the KP evolution in terms of an appropriate extension of Calogero-Moser dynamics.
+\end{subgoal}
+\begin{subgoal} 
+Encode the KP evolution of commuting families of fractional differential operators as an action of the Jacobian of an algebraic variety.
+\end{subgoal}
+The solutions of the KP hierarchy corresponding to commuting families of fractional differential operators provide a vantage point for the expression of a wider class of solutions in terms of special functions.
+Furthermore, our approach allows additional flexibility on the representative of the birational equivalence class of the curve, via an appropriate change of our jet bunle data.
+In particular, we are able to restrict our attention to nonsingular curves.
+
+\subsubsection*{Fourier Algebras of Hermite-Type Weights}
+In the recent publication \cite{CY2018}, the PI settles a long-standing problem which can be traced all the way back to work of Krein in the $1950$'s \cite{Krein}: the classification of sequences of orthogonal matrix polynomials satisfying second-order differential equations.  The main result of \cite{CY2018} is that, under mild assumptions, all orthogonal matrix polynomials are noncommutative bispectral Darboux tranfsormations of direct sums of classical weights.  The key to the proof is an in-depth study of two noncommutative algebras: the (right) bispectral algebra $\mathcal D(W)$ and (right) Fourier algebra $\mathcal F_R(P)$ of a sequence of orthogonal matrix polynomials $P(x,n)$ for a weight matrix $W(x)$.  These algebras describe the differential operators whose action on $P(x,n)$ may be described in terms of a finite recurrence relation, including important classes such as ladder relations.  They are described in detail in Section \ref{sec:hermite} below and play a prominent role in subsequent new research articles \cite{calderon,deano,ismail}.
+
+In this project, we wish to study the Fourier algebras orthogonal matrix polynomials $P(x,n)$ of Hermite type, ie. corresponding to matrix-valued weights of the form $W(x) = e^{-x^2}e^{Ax}e^{A^*x}$ for $A$ a nilpotent matrix.
+By the characterization of \cite{CY2018}, the Fourier algebra $\mathcal F_R(P)$ in this case is exactly the algebra of matrix-valued differential operators with polynomial coefficients.
+Thus, the interesting ingredient is the generalized Fourier map $b_P$ which relates each matrix-valued differential operator to a difference operator corresponding to the associated recurrence relation.  
+\begin{goal}
+Explicitly determine the generalized Fourier map for sequences of orthogonal matrix polynomials of Hermite type.
+\end{goal}
+\noindent This project is composed of the following concrete tasks.
+\begin{subgoal}
+Determine explicit expressions for the graded components of the right Fourier algebra $\mathcal F_R(P)$ of a sequence $P(x,n)$ of orthogonal matrix polynomials for $W(x)$.
+\end{subgoal}
+\begin{subgoal}
+Discover an explicit formula for the noncommutative bispectral Darboux transformations from $W(x)$ to $e^{-x^2}I$.
+\end{subgoal}
+\begin{subgoal}
+Classify all the one-step bispectral Darboux transformations of $W(x)$ in terms of an adelic-type grassmannian.
+\end{subgoal}
+An explicit expression for the Darboux transformation data from the classical Hermite weight to $W(x)$ will immediately describe the generalized Fourier map \emph{generically} in terms of the generalized Fourier map in the classical case.
+It will also give us an explicit expression for the bifiltration of the Fourier algebra, which in turn can be used to produce explicit values of matrix-valued differential operators commuting with matrix-valued integral operators, ie. matrix-valued prolate-spheroidal operators.
+Such operators are a topic of great recent interest \cite{grunbaum2017,grunbaum2015}.
+
+\section{Project 1: Commuting Integral and Differential Operators}\label{sec:integral differential}
+The first project we propose is to obtain a universal description for the asymptotic spectral data of the family of integral operators with the prolate spheroidal property (ie. they commute with a nonconstant differential operator), parametrized by a Calogero-Moser flow in an adelic grassmannian.
+This project will be in collaboration with Milen Yakimov at Northeastern, Alberto Gr\"unbaum at Berkeley, and Ignacio Zurri\'an at Cordoba.
+Our motivation comes from the recent papers \cite{CGYZ,CGYZ2,CY2019} in which the PI and his collaborators are able to obtain a wide class of pairs $(T_\psi,\mathfrak d_\psi)$ consisting of a commuting integral operator $T_\psi$ and differential operator $\mathfrak d_\psi$, parameterized by symmetric points $\psi$ of Wilson's adelic grassmannian and its higher rank variants.
+Following the analysis of Fuchs \cite{Fuchs64} and Slepian \cite{Slepian65} for the integral operator with sinc kernel, and Tracy and Widom \cite{TW1,TW2} for integral operators with Bessel and Airy kernels (special cases of our family), we wish to use the commuting operator $\mathfrak d_\psi$ to analyze the asymptotic spectral data of $T_\psi$.
+This asymptotic data is particularly interesting in light of our expectation that the Fredholm determinant of our integral operators will be a $\tau$-function of Painlev\'e V, generalizing a result of Jimbo et al. \cite{JMMS}.
+In particular, this spectral data should have an interpretation in terms of the statistics of the level spacing of eigenvalues of certain random matrix ensembles.
+
+To obtain our proposed asymptotic spectral analysis, along with the desired applications for random matrices, we propose the following steps.
+\begin{enumerate}[(Step 1):]
+\item Determine an explicit dependence of the operator of lowest order $\mathfrak d_\psi$ commuting with the integral operator $T_\psi$ as $\psi$ varies along a Caloger-Moser flow of the adelic grassmannian.
+\item Obtain a system of partial differential equations describing the evolution of the coefficients of $\mathfrak d_\psi$ along a flow.
+\item Use the WKB method to approximate the asymptotic values of eigenfunctions of the differential operator $\mathfrak d_\psi$ belonging to its descrete spectra, and use them to obtain estimates for the discrete spectra of $T_\psi$.
+\item Relate spectra of the integral operators $T_\psi$ to probability distributions associated with random matrix ensembles by expressing the spectra as a $\tau$-function of Painleve.
+\end{enumerate}
+Note that for Step 1, the integral operator $T_\psi$ will vary smoothly as the point in the adelic grassmannian corresponding to $\psi$ follows a Calogero-Moser flow, so we expect that the order of $\mathfrak d_\psi$ should be generically constant.
+It's also worth pointing out that for Step 2 the coefficients will not vary simply by a solution of the KP hierarchy, as $\psi(x,z)$ is not an eigenfunction of the commuting operator.
+
+\subsection{Bispectrality,  Fourier Algebras, and the Adelic Grassmannian}
+This section discusses the connection between bispectrality, Calogero-Moser spaces, and the adelic grassmannian in greater detail, in order to emphasize the intellectual merit of the above project goal and explain the PI's past contributions to the area.
+A bispectral function $\psi(x,z)$ is a meromorphic function of two variables $x,z$ satisfying
+$$\mathfrak b(x,\partial_x)\cdot\psi(x,z) = f(z)\psi(x,z)\ \ \text{and}\ \ \mathfrak d(z,\partial_z)\cdot\psi(x,z) = g(x)\psi(x,z)$$
+for some meromorphic functions $f(z)$ and $g(x)$.
+To each $\psi(x,z)$ we associate two natural algebras: a commuting family of differential operators called the \vocab{bispectral algebra} $\mathcal B_z(\psi)$ and a noncommutative family of differential operators called the \vocab{Fourier algebra}
+$$\mathcal B_z(\psi) = \left\lbrace\mathfrak d(z,\partial_z): \exists g(x)\ \text{s.t.}\ g(x)\cdot\psi(x,z) = \mathfrak d_z\cdot\psi(x,z)\right\rbrace,$$
+$$\mathcal F_z(\psi) = \left\lbrace\mathfrak d(z,\partial_z): \exists\mathfrak b(x,\partial_x)\ \text{s.t.}\ \mathfrak b_x\cdot\psi(x,z) = \mathfrak d_z\cdot\psi(x,z)\right\rbrace,$$
+along with two similarly defined algebras $\mathcal B_x(\psi)$ and $\mathcal F_z(\psi)$.
+The \vocab{rank} of $\psi(x,z)$ is the greatest common divisor of the orders of operators in $\mathcal B_z(\psi)$.
+Bispectral functions of a given rank are in general expressed in terms of bispectral Darboux transformations of a some discrete collection of fundamental bispectral functions.
+These in turn are parameterized certain adelic grassmannians, such as Wilson's adelic grassmannian \cite{Wilson98} and the Bessel and Airy adelic grassmannians \cite{CGYZ}.
+
+For any $c\in\bbc$, let $\mathscr C =\bigoplus_{c\in\bbc}\mathscr C_c$ where $\mathscr C_c$ denotes the vector space of linear functionals supported at $c$ spanned derivatives $\delta^{(k)}(z-c)$ of the Dirac delta distribution.
+A subspace $C\subseteq\mathscr C$ is homogeneous if $C = \bigoplus_{c\in\bbc}(C\cap \mathscr C_c)$.
+Wilson's adelic grassmannian $\Gr^{ad}$ is a subgrassmannian of Sato's grassmannian $\Gr$ consisting of subspaces of complex rational polynomials in a single variable satisfying certain adelic conditions
+$$\Gr^{ad} = \left\lbrace\frac{1}{q(z)}V_C\subseteq \bbc(z): C\subseteq \mathscr C\ \text{homogeneous and}\ q(y) = \prod_{c\in\bbc} (y-c)^{\dim(C\cap \mathscr C_c)}\right\rbrace,$$
+where here $V_C = \{p(z)\in\bbc[z]: \langle p(z),\chi(z)\rangle = 0\ \forall\chi\in C\}$.
+Simultaneously, the adelic grassmannian parametrizes (1) line bundles on rational curves with only cuspidal singularities, (2) bispectral Darboux transformations of constant coefficient differential operators, (3) rank $1$ bispectral functions, (4) one-sided ideals of the Weyl algebra $\bbc[x,\partial_x]$, and (5) points in the union of Calogero-Moser spaces $\bigcup_n \text{CM}_n$ \cite{Wilson,Wilson98}.
+Here the rank $n$ Calogero-Moser space is defined by
+$$\text{CM}_n = \{(X,Y)\in M_n(\bbc)^{\oplus 2}: XY-YX+I\ \text{is rank $1$}\}/\text{GL}_n(\bbc),$$
+where $\text{GL}_n(\bbc)$ acts by conjugation.
+Explicitly, to any representative $(X,Y)$ of an equivalence class in $\text{CM}_n$ we associate the bispectral function $\psi(x,z) = e^{xz}\det(I-(xI+X)^{-1}(zI+Y)^{-1})$.
+
+The adelic grassmannian comes equipped with multiple natural involutions, such as \vocab{Schwartz reflection} $W\mapsto cW = \left\lbrace\ol{f(\ol z)}: f(z)\in W\right\rbrace$, and the \vocab{sign involution} $W\mapsto sW = \left\lbrace f(-z): f(z)\in W\right\rbrace$.
+The most important involution for us is the \vocab{adjoint involution} defined by $W\mapsto aW = \{f(z): \oint_{|z|=1} f(z)g(-z) dz = 0\ \forall g(z)\in W\}$.
+On the level of Darboux transformations, this involution is analogous to taking the formal adjoint of a differential operator \cite{CY2019}.
+Thus points of the adelic grassmannian which are self-adjoint $aW = W$ correspond to bispectral functions $\psi(x,z)$ which are self-adjoint in terms of the adjoint of the corresponding bispectral Darboux transformation of $e^{xy}$.
+We will let $a\psi(x,z)$, $s\psi(x,z)$ and $c\psi(x,z)$ denote the involutions applied to the bispectral function $\psi(x,z)$.
+
+\subsection{Reflective Prolate-Spheroidal Operators}
+Let $s\in\bbr$.
+To each rank $1$, bispectral function $\psi(x,z)$ satisfying $a\psi(x,z) = c\psi(x,z)$, we associate Laplace-like and Fourier-like operators
+$$( L_{\psi,s} f)(z) = \int_s^\infty \psi(x,-z)f(x)dx\ \ \text{and}\ \ ( F_{\psi,s} f)(z) = \int_s^\infty \psi(x,iz)f(x)dx,$$
+along with their adjoints.
+In the special case that $\psi(x,z) = e^{xz}$ these are precisely truncated versions of the Laplace and Fourier transforms.
+The self-adjoint operators $L_{\psi,s}L_{\psi,t}^*$ and $F_{\psi,s}F_{\psi,t}^*$ are analogous to the time and band-limiting operator defined by truncating the frequency of a function, followed by truncating its support, under the Fourier transform.
+
+In previous work by the PI and his collaborators \cite{CGYZ}, the prolate-spheroidal property is naturally generalized in a novel way to the \vocab{reflective} prolate-spheroidal property, wherein $T\mathfrak d = \mathfrak d^*T$ for some differential operator $\mathfrak d$ (where here $\cdot^*$ denotes the adjoint).
+Subsequently a host of new examples of reflectively commuting integral and differential operators are found, stemming from the Laplace-like time and band-limiting operators defined above, along with commuting pairs for the Fourier-like operators.
+Note that the reflectively commuting property reduces to classical commutativity when $\psi(x,z)$ is fixed by the sign involution.
+They turn out to have the prolate spheroidal property as the next theorem shows.
+\begin{thm}[\cite{CGYZ}]\label{thm:commuting integral}
+For any $s,t\in\bbr$, the self-adjoint integral operator $L_{\psi,s}L_{\psi,t}^*$ will reflectively commute with a differential operator $\mathfrak d_{s,t}(z,\partial_z)\in\mathcal F_z(\psi)$, ie. $L_{\psi,s}L_{\psi,t}^*\mathfrak d_{s,t}(z,\partial_z) = \mathfrak d_{s,t}(z,\partial_z)^*L_{\psi,s}L_{\psi,t}^*$.
+Moreover $F_{\psi,s}F_{\psi,t}^*$ will commute with the corresponding operator $\mathfrak d_{s,it}(-iz,i\partial_z)$.
+\end{thm}
+The above result is algebro-geometric in nature, since $\mathcal F_z(\psi)$ is naturally isomorphic to the collection of differential operators on a line bundle over the spectral curve of a bispectral operator for $\psi(x,z)$.
+The order of the operator $\mathfrak d_{s,t}(z,\partial_z)$ commuting with $L_{\psi,s}L_{\psi,t}^*$ is bounded by a linear expression involving the \emph{differential genus} of the associated line bundle as defined in \cite{BW}.
+The differential genus in turn defines the isomorphism class of the algebra of differential operators on the line bundle.
+Note that the commuting operator can be taken to be self adjoint, and even to have polynomial coefficients, by taking an operator of even larger order.
+The PI and his collaborators also prove a version of this theorem for self-adjoint bispectral functions of rank $2$ in \cite{CY2019}.
+In another direction, the author and his collaborators will extend the results of Theorem \ref{thm:commuting integral} to the discrete-continuous and discrete-discrete bispectral functions taking values in finite dimensional algebras, generalizing results in \cite{GPZ,Grunbaum-CMP2018}.
+
+The asymptotic analysis performed by Tracy and Widom on the operator $L_{\psi,s}L_{\psi,t}^*$, with $\psi$ defined by an Airy or Bessel function, relies strongly on the fact that $L_{\psi,s}L_{\psi,t}^*$ has simple spectrum.
+However, the simplicity of the spectrum is nonintuitively counter-indicated by the presence of a \emph{noncommutative} algebra of differential operators which commute with $L_{\psi,s}L_{\psi,t}^*$, when viewed as an operator acting on smooth functions with compact support with domains in the open interval $(t,\infty)$.
+For example, recent calculations performed by the PI show that for $\psi(x,y) = \exp(xy)$, the algebra of differential operators commuting with $F_{\psi,s}F_{\psi,t}^*$ has GK dimension $2$ and is generated by the three differential operators $\mathfrak a$, $\mathfrak b$, and $\mathfrak d$ with relations
+$$\mathfrak a\mathfrak b-\mathfrak b\mathfrak a + \mathfrak a = 0,\ \ \mathfrak b\mathfrak d - \mathfrak d\mathfrak b - \mathfrak b = 0,\ \ \mathfrak a\mathfrak b-\mathfrak d^3 = 0.$$
+Their specific values are $\mathfrak a = (b+z)\partial_z^2 + (-2ab-2az+1)\partial_z+aa(ab+az-1)$, $\mathfrak b = (b+z)^2\partial_z - ab^2 - 2abz -az^2+b+z$, and $\mathfrak d = (b+z)\partial_z - a(b+z)$.
+We conjecture that this noncommutativity vanishes when we extend the integral operator to functions on a locally compact Hausdorff space $[t,\infty)$, and consider the commuting differential operators after their extensions to the same domain.
+These in turn are determined by a choice of boundary condition for the respective derivatives.
+This motivates the following question.
+\begin{quest}
+What are the representations of the noncommutative algebra of differential operators commuting with the integral operator $F_{\psi,s}F_{\psi,t}^*$?
+Which operators still commute after extension of the operator to square integrable functions on a locally closed interval?
+\end{quest}
+Ideally, each possible boundary condition at $a$ on a differential operator and its derivatives will correspond to a unique commuting operator in this Fourier algebra.
+Consequently, the noncommutative algebra itself will have an interpretation as the algebra of \vocab{boundary operators} commuting with $F_{\psi,s}F_{\psi,t}^*$.
+
+\section{Project 2: Integrable Systems and Commuting Fractional Differential Operators}\label{sec:commuting fractional}
+The second project we propose is to extend Krichever correspondence to fractional differential operators and obtain an algebro-geometric description of the associated KP flows.
+This project is a continued collaboration with Emil Horozov at the University of Sofia in Bulgaria, Plamen Iliev at Georgia Tech, and Milen Yakimov at Northeastern.
+Here, we view fractional differential operators as formal expressions of the form $\mathfrak a^{-1}\mathfrak b$ for some differential operators $\mathfrak a$ and $\mathfrak b$ in a single variable $x$.
+The set of fractional differential operators forms a natural subring of the ring of pseudo-differential operators.
+
+Recently by using novel techniques the PI was able to extend Burchnall and Chaundy's well-known result \cite{burchnall} to the case of fractional differential operators, proving that two commuting fractional differential operators must satisfy a nontrivial algebraic relation \cite{CHIY}.
+Even better, for commuting algebras of fractional differential operators, the PI and his collaborators are are developing a nontrivial extension of Krichever correspondence, relating rank $1$ commutative algebras of fractional differential operators to jet bundle data over line bundles on algebraic curves.
+
+Krichever correspondence identifies a differential operator $\mathfrak a$ with a point $W$ in an infinite dimensional grassmannian $\Gr$, called Sato's grassmannian.
+Flows $W(\vec t)$ of $W$ in $\Gr$ induced by the natural action of a loop group, called KP flows, in turn describe parametric families of differential operators $\mathfrak a(\vec t)$.  The associated coefficients in turn describe solutions of a system of nonlinear partial differential equations called the KP hierarchy, which has applications spanning from fluid dynamics to algebraic geometry.
+Furthermore, when $W$ is rank 1 the loop group action may be described as the action of an Abelian variety.
+
+Motivated by the success of the classical situation, we desire to obtain an algebro-geometric description of the KP evolution of fractional differential operators.  To do so, we propose the following steps.
+\begin{enumerate}[(Step 1):]
+\item
+Extend Krichever correspondence to commuting families of fractional differential operators.
+\item 
+Parameterize the KP evolution of fractions $\mathfrak a^{-1}\mathfrak b$ of \emph{commuting} differential operators $\mathfrak a$ and $\mathfrak b$ in terms of the Picard group of the associated curve.
+\item
+Describe the KP evolution of \emph{conjugates} of the operators in Step 2, in terms of a natural action of the Picard group of the associated curve $X$ on sections of the dual of a jet bundle $J^\infty(\pi)$ on a line bundle $\pi:E\rightarrow X$.
+\end{enumerate}
+The first step is not required for Step 2 or Step 3, since we can just restrict our attention to the rank $1$ case, but is still motivationally appealing for the sake of a complete theory.
+The PI and his collaborators have developed a correspondence for rank $1$ commuting families of commuting fractional differential operators (as defined below), based on a novel association of a field $K_W$ to a point $W$ in $\Gr$, and are close to finalizing the details.  An example demonstrating the correspondence is described below.
+For the second step, the PI strongly suspects that there is a link between the KP evolution of $\mathfrak a$ and $\mathfrak b$, separately, and the KP evolution of $\mathfrak a^{-1}\mathfrak b$.  To prove this, the PI plans to specialize the methods of Krichever for fractions of differential operators \cite{krichever1995} to the case when the numerator and denominator commute.
+For Step 3, conjugation by a fractional differential operator corresponds to a choice of an \emph{algebraic} section on the dual of the jet bundle $J^\infty(\pi)^*$ of a line bundle $\pi: E\rightarrow X$ over an algebraic curve $X$.
+To get the associated action on the jet bundle, our starting point is the analytic theory of Segal and Wilson \cite{SW}.
+In this way, we can interpret the action of the loop group on the Grassmannian as the natural action of $L^2(\ol{\mathbb D})$ on closures of points $W$ in $L^2(S^1)$.
+This multiplicative action should translate naturally to an action on the holomorphic sections of $J^\infty(\pi)^*$.
+
+\subsection{Burchnall-Chaundy Theory and Sato's Grassmannian}
+In the early $90$'s, Burchnall and Chaundy began the systematic study of pairs $\mathfrak a,\mathfrak b$ of commuting differential operators.
+By analyzing the action of $\mathfrak a$ on the kernel of $\mathfrak b$ and vice versa, they proved that the operators $\mathfrak a$ and $\mathfrak b$ satisfy a nontrivial algebraic relation \cite{burchnall}.
+However, their argument does not extend to pairs of commuting fractional differential operators due to issues defining kernels.
+Recently, the PI obtained a new, simple proof of Burchnall and Chaundy's result which avoids consideration of kernels and extends to the fractional case \cite{CHIY}.
+\begin{thm}
+Let $\mathfrak a$ and $\mathfrak b$ be two commuting fractional differential operators with either $\mathfrak a$ or $\mathfrak b$ having nonzero order.  Then $\mathfrak a$ and $\mathfrak b$ satisfy a nontrivial algebraic relation.
+\end{thm}
+When $\mathfrak a$ and $\mathfrak b$ are both order $0$, whether or not they satisfy a nontrivial algebraic relation comes down to whether or not the leading coefficients of $\mathfrak a$ and $\mathfrak b$ satisfy an algebraic relation.
+In light of this result, the algebra generated by a commuting pair of fractional differential operators is necessarily a one dimensional affine variety.
+
+Commutative algebras of differential operators are determined by points in Sato's grassmannian $\Gr$, and infinite dimensional grassmannian which acts as a classifying space for the set of solutions to the KP hierarchy.
+To begin, let $\mathcal D$ and $\mathcal P$ be the rings of differential and pseudodifferential operators, respectively, with coefficients in the ring $\bbc[[x]]$ of formal power series in $x$.  Also let $\mathbb L = \bbc((z^{-1}))$ be the ring of formal Laurent series in $z^{-1}$ and identify the polynomial ring $\mathbb L_+ =\bbc[z]$ with the quotient space of $\mathbb L$ defined by $\pi_+: \mathbb L\mapsto \mathbb L/z^{-1}\bbc[[z^{-1}]]$.
+Sato's grassmannian is
+$$\Gr = \{W\subseteq \mathbb L: \dim(\ker\pi_+|_W) <\infty,\ \ \dim(\coker\pi_+|_W)<\infty\}.$$
+By identifying $z$ with $\partial_x$, we can identify $\mathbb L$ with the right $\mathcal P$-module $\mathcal P/x\mathcal P$, lending $\mathbb L$ a natural right $\mathcal P$-module structure.
+Mostly, we will be concerned with the big cell of index $0$, denoted $\Gr_+(0)$, consisting of $W\in\Gr$ wherein $\pi_+|_W$ is an isomorphism.
+
+Every point $W\in\Gr_+(0)$ may be expressed as $\mathbb L_+\cdot\mathfrak u$, where $\mathfrak u = 1 + \sum_{n=1}^\infty u_n(x)\partial_x^n\in\mathcal P$.
+A Schur pair $(W,A)$ consists of a point $W$ in $\Gr_+(0)$ and a subalgebra $A\subseteq \mathbb L$ with $f(z)W\subseteq W$ for all $f(z)\in A$.
+Schur pairs form a natural poset with maximal elements of the form $(W,A_W)$ for $A_W = \{f(z)\in\mathbb L: f(z)W\subseteq W\}$.
+
+If $f(z)\in A$, then $\mathfrak a = \mathfrak u f(\partial_x)\mathfrak u^{-1}$ defines a differential operator in $\mathcal D$.
+In this way, the Schur pair $(W,A)$ defines an algebra of commuting differential operators.
+A classical result by Schur \cite{schur} says that any differential operator $\mathfrak a = \partial_x^n + \sum_{j=0}^{n-1} a_j(x)\partial_x^j$ can be conjugated via a pseudodifferential operator $\mathfrak u$ of order $0$ into $\partial_x^n$.
+Consequently every commutative algebra of differential operators has a description in terms of a Schur pair.
+In general $A_W$ is defined for any point in $\Gr$, but typically $A_W=\bbc$.
+
+In ongoing work, the PI and his collaborators have extended this approach to fractional differential operators.
+As above, we associate the point $W=\mathbb V_+\cdot \mathfrak u$ of Sato's grassmannian to the fractional differential operator $\mathfrak a$, via the pseudodifferential operator $\mathfrak u$ conjugating $\mathfrak a$ to $\partial^n$.
+Our key innovation is to consider the algebra
+$$K_W = \{f(z)\in \mathbb L: \dim((f(z)W+W)/W) < \infty\}.$$
+Note that $K_W$ is a field which corresponds under conjugation by $\mathfrak u$ to the centralizer of $\mathfrak a$ in the algebra of fractional differential operators.
+Furthermore, $K_W$ may be nontrivial even when $A_W=\bbc$, but when $A_W$ is larger than $\bbc$ then $K_W$ is the fraction field of $A_W$.
+Thus we obtain a significant new interpretation of many points of $\Gr$ in terms of commuting algebras of fractional differential operators.
+
+The tangent space of $\Gr_+(0)$ at a point $W$ is the vector space $T_W\Gr_+(0) = \hom_{\bbc}(W,\mathbb V/W)$.  The commuting system of vector fields $\{X_n\}_{n=1}^\infty$ defined by $X_{n,W}: v(z)\mapsto z^nv(z)\mod W$ define a family of commuting flows $W(\vec t) = W(t_1,t_2,\dots)$ called the KP flows.
+Generically, these flows are orbits of the action of the loop group $\Gamma_+$ of holomorphic functions on the closed disk $\ol{\mathbb D}$, as described by Segal and Wilson \cite{SW}.
+If $W$ corresponds to a differential operator $\mathfrak a$, then this induces a family $\mathfrak a(\vec t)$ of iso-spectral deformations of $\mathfrak a$ and the coefficients of $\mathfrak a(\vec t)$ define a solution of the KP hierarchy.
+The fractional case works similarly and can determine solutions of many well-known integrable PDE's, such as the nonlinear Schr\"odinger equation.
+\begin{ex}
+	Let $\mathfrak a=\partial_x^2 + a_1(x)\partial_x + a_0(x)$ and $\mathfrak b = \partial_x + a_1(x)$.  Then $\mathfrak b^{-1}\mathfrak a$ commutes with a second-order differential operator when $a_0'(x) + 2a_0(x)a_1(x) =0$ and $a_0(x)=\pm r^2(x)$ satisfies the nonlinear Schr\"odinger equation $\pm r(x)^3 + \frac{1}{2}r'''(x) = kr(x)$.
+\end{ex}
+
+\subsection{Krichever Correspondence}
+The correspondence between differential operators and points of $\Gr$ forms the basis of Krichever correspondence: a classification of  commutative algebras of differential operators in terms of vector bundles over algebraic curves.
+
+Beginning with a line bundle $\mathcal L$ over an algebraic curve $X$, we choose a local analytic neighborhood $U_p$ of a smooth point $p\in X$ and a local trivialization of $\mathcal L_{U_p}$.  Together, this induces a homomorphism of local rings $\phi: \mathcal O_{X,p}\rightarrow\bbc[[w]]$ and a module homomorphism $\varphi: \mathcal L_p\rightarrow \bbc[[w]]$.
+Setting $A = \phi(\mathcal O(X\diff\{p\}))$ and $W = \varphi(\mathcal L(X\diff\{p\})$, we obtain a Schur pair $(A,W)$.  As described in the previous section, this Schur pair defines a commutative family of differential operators.
+
+More formally, a Krichever quintuple $(X,E,p, t,\varphi)$ consists of: an algebraic curve $X$; a vector bundle $\pi: E\rightarrow X$ of rank $r$; a smooth point $p$ on $X$; an $r$-sheeted covering $t:\bbd\rightarrow U_p$ of an open neighborhood $U_p$ of $p$ ramified at $p$; an $\mathcal O_{U_p}$-module isomorphism $\varphi: E(U_p)\rightarrow t_*\mathcal O_{\mathbb D}(-1)$.
+When $X$ is singular, we replace the notion of a vector bundle with a maximally torsion free sheaf.
+The assignment $W = \varphi(E(X\diff\{p\}))$ and $A = t^*\mathcal O_{U_p}(\mathbb D\diff\{0\})$ defines a fully faithful functor between the category of Krichever quintuples and the category of Schur pairs.
+
+In ongoing work, the PI and his collaborators are extending Krichever correspondence to a correspondence between sextuples of data $(X,E,\infty, \varphi,\chi)$ consisting of a standard Krichever quintuple plus a section $\chi$ of the dual of the jet bundle $J^\infty(\pi)$ over $\pi: E\rightarrow X$.
+To state this correspondence precisely, let $j_\infty: E\rightarrow J^\infty$ be the natural vector bundle morphism $j_\infty: (w,s(w))\mapsto (w,s(w),s'(w),\dots).$
+\begin{thm}[\cite{CHIY}]
+Let $(W,A)$ be a Schur pair corresponding to an algebra of commuting fractional differential operators.
+Then there exists a sextuple $(X,E,p,t,\varphi,\chi)$ with $\chi: J^\infty(\pi)(U_p)\rightarrow E(U_p)$ extending to an algebra section of a subbundle of $J^\infty(\pi)$, such that $W=\phi(J^\infty(\pi)(j_\infty(E(X\diff\{p\}))))$.
+\end{thm}
+As this extended correspondence is currently absent from the literature, we emphasize our exposition with the following example.
+\begin{ex}
+Consider the elliptic curve $X = \{[X:Y:Z]: Y^2Z=4X^3-g_2XZ^2-g_3Z^3\}$, along with the distinguished point $p=[0:1:0]$ and the local trivialization $t: w\mapsto [\wp(w):\wp'(w):1]$ for $\wp(w)$ the associated Weierstrass $\wp$-function.
+By choosing an appropriate line bundle $\pi: E\rightarrow X$ and trivialization $\varphi: E(U_p)\rightarrow t_*\mathcal O_{\mathbb D}(-1)$, Krichever correspondence gives us a Schur pair $(W,A)$ of the form $W=\text{span}_A\{1,v_1(z)\}$ and $A=\bbc[\wp(1/z),\wp'(1/z)]$ for some $v_1(z)\in\mathbb L$ of degree $1$.
+The associated commutative family of differential operators is $\bbc[\mathfrak d,\mathfrak b]$ with $\mathfrak d = \partial_x^2-2\mathfrak p(x)$ and $\mathfrak b = \partial_x^3-\frac{3}{2}\mathfrak p'(x)\partial_x-\frac{3}{2}\mathfrak p(x)$.
+
+Now if we include the section $\chi: J^\infty(\pi)(t^{-1}(\bbd))\rightarrow E(t^{-1}(\bbd))$ defined in terms of the canonical charts $s_0,s_1,\dots$ by $\chi: (w,s_0,s_1,\dots)\mapsto (w,-(2/w^2)s_1 + v_1(w)s_0)$, then the associated point of Sato's grassmannian is $\wt W = \varphi(J^\infty(\pi)(j_\infty(E(X\diff\{p\})))) = W\cdot (-2x\partial_x^2 + v_1(\partial_x^{-1}))$.  The associated family of commuting fractional differential operator are the conjugates of $\mathfrak d$ and $\mathfrak b$ by $(x\partial_x^2+\partial_x + q(x))$, where here $q(x)$ satisfies $q'(x) + 2x\wp'(x) + 3\wp(x)=0$.
+\end{ex}
+
+A Krichever quintuple $(X,\mathcal V,p,t,\varphi)$ has an natural action by the Jacobian of $X$ via tensor product.  The associated orbits of Schur pairs correspond to KP flows and reinterpret the action of the loop group $\Gamma_+$ as an action of the Jacobian.  This in turn leads to expressions of solutions of the KP hierarchy in terms of the theta functions of the associated algebraic curve.
+The goal of this project is to manage the same outcome for the wider class of commuting fractional differential operators.
+
+\section{Project 3: Fourier Algebras of Hermite-Type Weights}\label{sec:hermite}
+The purpose of this project is to obtain an explicit description of the noncommutative bispectral Darboux transformations between Hermite-type matrix exponential weights and the standard Gaussian $\exp(-x^2)I$.
+Additionally, it is desireable to classify the noncommutative bispectral Darboux transformations in terms of an adelic-type Grassmannian and analyze the algebraic structure of the associated bispectral algebras.
+As a result, we will obtain an explicit description of the bigrading of the associated Fourier algebra, from which we may construct a wide class of new examples of matrix-valued integral operators with the prolate spheroidal property.
+
+To obtain our goals, we propose taking the following strategic steps.
+\begin{enumerate}[(Step 1)]
+\item Obtain an explicit description of the filtered components of the right Fourier algebra $\mathcal F_R^{\ell,m}(P)$ of a sequence $P(x,n)$ of orthogonal matrix polynomials of Hermite type. 
+\item Classify the one-step noncommutative bispectral Darboux transformations, ie. those arising from a single factorization of a diagonal differential operator.
+\item Find an adelic grassmannian-type parametrization of the Darboux transformations of scalar weights and use an appropriate geometric closure to determine \emph{all} noncommutative bispectral Darboux transformations.
+\item Find a representation-theoretic interpretation of the points in the adelic grassmannian picture obtained above.
+\end{enumerate}
+The bifiltration $\mathcal F_R^{\ell,m}(P)$ is defined in terms of the generalized Fourier map.
+As explained below, the generalized Fourier algebra consists of the matrix-valued differential operators $\mathfrak D$ for which there exists a matrix-valued difference operator $\Sigma$ satisfying $\Sigma\cdot P(x,n) = P(x,n)\cdot\mathfrak D$.  Note that in this context, our differential operators act on the right.  As a simple example, the Hermite polynomials $h(x,n)$ satisfies $2nh(x,n-1)= h'(x,n)$, or in operator language $n\mathscr D^*\cdot h(x,n)= h(x,n)\cdot\partial_x$ (with $\mathscr D$ the usual shift operator).
+The bifiltration on $\mathcal F_R^{\ell,m}(P)$ is defined in terms of the generalized Fourier map $b_P$ taking a difference operator $\Sigma$ to a differential operator $\mathfrak D=b_P(\Sigma)$ satisfying $\Sigma\cdot P=P\cdot\mathfrak D$.
+Then the filtration $\mathcal F_R^{\ell,m}(P)$ consists of all elements of $\mathcal F_R(P)$ of order $\leq \ell$ corresponding to difference operators of bandwidth at most $m$.
+Obtaining an explicit description of the bispectral map is challenging, so our plan for Step 1 is to instead use the existence of an adjoint as proved in \cite{CY2018} in order to characterize the bifiltration in a different way.
+Using the adjoint $\dag$, we can show $\mathcal F^{\ell,m}(P)$ consists of all $\mathfrak D$ in $\mathcal F(P)$ of order $\ell$ with $\mathfrak D^\dag$ having order $m$.  Explicit analysis of the adjoint will then solve the problem.
+Notably, an explicit description of the bifiltration will also result in a new, wide family of matrix-valued differential operators commuting with matrix-valued integral operators, ie. a matrix version of the prolate spheroidal property.
+
+Steps (2) and (3) will be very robust results, of independent interest both in terms of a further refinement of the description of the PI's solution of the matrix Bochner problem \cite{CY2018} and in terms of noncommutative integrable systems (with ties to the previous project goals).
+Again, the primary tools that we expect to rely on is an analog of the Fourier algebra as defined in \cite{CY2018}, based on the definition in \cite{CY2019}.
+As is true in the scalar situation, analysis of the algebras in the Fourier algebra, in terms of difference operators on the left and differential operators on the right, will provide criteria for the existence of factorizations of matrix Bochner pairs.
+Furthermore, the symmetric noncommutative bispectral Darboux transformations are determined by symmetric factorizations of matrix differential operators.
+We predict that these factorizations can be classified very similarly to their scalar counterparts, as in Wilson's formulation \cite{wilson1992}, wherein these factorizations are characterized by Lagrangian subspaces of kernels.
+An important subtask will be characterizing the Lagrangian subspaces that additionally generate factorizations with \emph{rational} coefficients.
+
+\subsection{The Matrix Bochner Problem}
+In this section we will describe the matrix Bochner problem and its solution in more detail to explain the intellectual merit of the proposed project goal and the PI's past contribution to the area.
+A \vocab{weight matrix} $W(x)$ on $\bbr$ is a Hermitian matrix-valued function supported on an open interval, positive-definite on its support, which has finite moments $\tr\int_{\bbr} |x|^nW(x)dx <\infty$.
+A weight matrix defines a matrix-valued inner product on the vector space of matrix-valued polynomials defined by $\langle P(x),Q(x)_W := \int_{\bbr} P(x)W(x)Q(x)^*dx$, whose trace is a complex Hermitian inner product on the same vector space.  This induces a pairwise-orthogonal sequence of matrix-valued polynomials $P(x,0),P(x,1),\dots$ with $P(x,n)$ degree $n$ and having an invertible leading coefficient.
+
+Motivated by constructions arising in representation theory \cite{GP,GP2,KRR,KPR}, we are specifically interested in weights whose sequences of orthogonal matrix polynomials are solutions of a second-order matrix differential equation of the form
+\begin{equation}\label{basic eigenvalue equation}
+P''(x,n)A_2(x) + P'(x,n)A_1(x) + P(x,n)A_0(x) = \Lambda(n)P(x,n)
+\end{equation}
+for all $n$ for some sequence of complex matrices $\Lambda(n)$.
+Equivalently, we want to know when the $P(x,n)$ are eigenfunctions of a second order matrix differential operator $\mathfrak D = \partial_x^2 A_2(x) + \partial_x A_1(x) + A_0(x)$ acting on the right with matrix-valued eigenvalues.
+In this case, we call the pair $(W(x),\mathfrak D)$ a \vocab{matrix Bochner pair}.
+The classification of \emph{all} matrix Bochner pairs is the \vocab{matrix Bochner problem}.
+Numerous examples of weights satisfying this property have been found during the past twenty years \cite{duran2004, duran2005c,grunbaum2005}.
+More recently, attention has turned to the algebra $\mathcal D(W)$ of all differential operators for which the sequence $P(x,n)$ are eigenfunctions
+\begin{equation}\label{D(W) def}
+\mathcal D(W) = \left\lbrace  \mathfrak D\in M_N(\bbc[x,\partial_x]): \forall\ n\geq 0\ \exists \Lambda(n)\in M_N(\bbc)\ \text{s.t.}\ P(x,n)\cdot\mathfrak D = \Lambda(n)P(x,n)\right\rbrace.
+\end{equation}
+This algebra has been a focal point of the literature in recent years \cite{castro2006,grunbaum2007b,zurrian2016,tirao2011,zurrian2016algebra}.  Even so, general results about $\mathcal D(W)$ were conspicuously absent until the very recent work of the PI \cite{casper2017,CY2018}.
+
+\subsection{The algebra $\mathcal D(W)$}
+In joint work with Milen Yakimov, the PI studied the structure of the algebra $\mathcal D(W)$ in detail, motivated by the general principle of the algebraic theory of the KP equation.
+Specifically, this is the principle that the algebraic structure of the centralizer of a differential operator can determine the operators specific value.
+Thus our recent advances on $\mathcal D(W)$ and the matrix Bochner problem focus on the algebraic geometry of the noncommutative algebra $\mathcal D(W)$.
+We use $\mathcal Z(W)$ and $\mathcal K(W)$ to denote the center of $\mathcal D(W)$ and the ring of fractions of $\mathcal Z(W)$, respectively.
+Note that $\mathcal K(W) = \bigoplus_{j=1}^n\mathcal K_j(W)$ for $n$ the number of irreducible components of $\mathcal Z(W)$ and $\mathcal K_j(W)$ is the fraction field of the $j$'th irreducible component.
+The next theorem describes the generic structure of the algebra $\mathcal D(W)$.
+\begin{thm}[\cite{CY2018}]
+Let $(W(x),\mathfrak D)$ be an $N\times N$ matrix Bochner pair.
+The algebra $\mathcal D(W)$ is affine and module-finite over $\mathcal Z(W)$, and the center is itself a reduced, one dimensional noetherian scheme.
+Moreover $\mathcal D(W)$ is generically a sum of matrix rings over its center and
+$$\mathcal D(W)\otimes_{\mathcal Z(W)}\mathcal K(W) \cong \bigoplus_{j=0}^n M_{r_j}(\mathcal K_j(W)).$$
+\end{thm}
+The above local structure formula allows us to define the \vocab{module rank} $r_1+\dots+r_n$ of $\mathcal D(W)$, and we call $\mathcal D(W)$ full if its module rank is $N$.
+Generically the algebra $\mathcal D(W)$ of an irreducible matrix Bochner pair $(W(x),\mathfrak D)$ tends to be full.
+For example, in the $2\times 2$ case $\mathcal D(W)$ is full if and only if it is noncommutative.
+\begin{thm}\cite{CY2018}
+Let $(W(x),\mathfrak D)$ be an $N\times N$ matrix Bochner pair.
+Then the algebra $\mathcal D(W)$ is full if and only if $W(x)$ is a noncommutative bispectral Darboux transformation of a direct sum of classical weights.
+In particular, there exists a rational matrix $T(x)$ and a matrix-valued differential operator $\mathfrak U$ with polynomial coefficients such that
+$$W(x) = T(x)\text{diag}(r_1(x),\dots, r_N(x))T(x)^*\ \ \text{and}\ \ P(x,n) = \text{diag}(p_1(x),\dots,p_N(x))\cdot\mathfrak U$$
+is a sequence of orthogonal polynomials for $W(x)$.
+\end{thm}
+In this project, the operators $\mathfrak U$ will correspond to points in a vector-valued adelic grassmannian, where the specific grassmannian is determined by the diagonal weights $r_1(x),\dots, r_N(x)$.
+Thus in very concrete terms, our proposed project will work toward constructing this grassmannian for each diagonal weight.  A key ingredient in our method will be analysis of the \emph{right Fourier algebra} $\mathcal F_R(P)$ of the sequence $P(x,n)$ of monic orthogonal matrix polynomials defined by $W(x)$.
+Note that the name Fourier algebra, also seen in Project 2 above, is more generally defined for any abstract bispectral context (ie. pair of operator algebras $\mathcal A,\mathcal B$ combined with an $\mathcal A,\mathcal B$-bimodule with trivial annihilators).
+This algebra is specifically defined by
+$$\mathcal F_R(W) = \{\mathfrak D\in M_N(\bbc[x,\partial_x]^{op}): \mathfrak D\ \text{is $W$-adjointable and}\ \mathfrak D^\dag\in M_N(\bbc[x,\partial_x]^{op})\},$$
+where here $\mathfrak D^\dag = W(x)\mathfrak D^* W(x)^{-1}$ is the formal $W$-adjoint of $\mathfrak D$ and $W$-adjointable means that the formal adjoint agrees with the adjoint as a linear operator on $M_N(\bbc[x])$.
+In particular the operator $\mathfrak U$ defining the  noncommutative bispectral Darboux transformation above is generated by an element of the right Fourier algebra of $P(x,n) = \text{diag}(p_1(x),\dots,p_N(x))$.
+
+
+\section{Results from Prior NSF Support}
+Prior to this application, the PI has never recieved NSF support.
+\section{Broader Impacts}
+\subsection{Dissemination and organizational activities}
+Algebro-geometric techniques in integrable systems have been an active point of continued research and expansion since their conception in the 1980's, in part because of the unusual and beautiful interactions they inspire between algebraic geometry and physics.
+However, the underlying theory is a complicated mix of functional analysis, noncommutative algebra, and algebraic geometry.
+Consequently many of the classical methods and new directions in the area remain unknown and unused by researchers in special functions, algebraic geometry and representation theory.
+
+Part of the research activity of the PI is the promotion and dissemination of the tools and ideas stemming from algebro-geometric integrable systems (broadly defined).
+This includes teaching and talks in seminars and conferences.
+In fall 2018, the PI gave a series of lectures on the technological background forming the algebraic theory of the KP equations, stemming over a period of several weeks in a noncommutative algebra seminar at LSU.
+The PI has disseminated his work through invited talks at conferences including (1) Geometry and Physics XVI in Timisoara, Romania 2018, (2) AMS-CMS Joint Meeting in Shanghai, China 2018, (3)  International Conference of Mathematics Satellite Conference in Cusco, Peru 2018, (4)  SE Lie Theory Workshop XI at Louisiana State University in 2019, (5) Orthogonal Polynomials, Special Functions and Applications in Hagenberg, Austria 2019, (6)  Orthogonal Polynomials, Special Functions, Operator Theory and Applications in Kent, UK 2020.
+The PI has also given invited seminar talks at Radboud University and University of California Berkeley, and has been invited to lecture at the workshop Matrix-valued Special Functions and Integrability in the Netherlands in December.
+In the near future, the PI plans to organize a special seminar on new developments in the interactions between algebraic geometry and integrable systems, tying in thematically with a proposed future BIRS workshop.
+The PI will also propose a special session of the AMS reviewing recent developments and connections between noncommutative algebra, algebraic geometry, and integrable systems.
+Interaction and collaboration with attendees will also naturally benefit the research proposed above.
+
+\subsection{Ongoing Related Undergraduate Research Projects}
+The PI is actively engaged in research collaborations with multiple undergraduates at his university related to the research projects above.
+The undergraduate collaborators have multiple ethnicities and genders, and include two non-traditional adult undergraduate students.
+\subsubsection*{Matrix-Valued orthogonal polynomials and nonlinear eigenvalue problems}
+In collaboration with undergraduate students Brandon Becsi and Solomon Huang, this project endeavors to expand the list of applications of matrix-valued orthogonal polynomials into other fields.
+Specifically, we consider the problem of finding the real values $x$ on a closed interval $[a,b]$ for which a matrix-valued function $F(x)$ has determinant $0$.  When $F(x)=Ix-A$, this is nothing more than an eigenvalue problem; for general $F(x)$ it is called a nonlinear eigenvalue problem.
+
+We propose to adapt an algorithm of Boyd \cite{boyd} to the nonlinear eigenvalue problem, using matrix-valued orthogonal polynomial analogs of the Chebyshev polynomials.
+These latter sequences are parameterized by choices of Hermitian matrices $A,B$, which may be chosen advantageously relative to the function we are approximating.
+Present results are being presented virtually at an undergraduate research poster conference of the Black Doctoral Network in late October 2020.
+Future results will be submitted for publication.
+\begin{ugoal}
+Create numerically effective implementations of matrix-valued Chebyshev polynomials to solve nonlinear eigenvalue problems
+\end{ugoal}
+
+\subsubsection*{Binary Discrete Tomography and Battleship}
+In collaboration with undergraduate students Jessica Douglass-Eurich and Taylor Grimes, this project considers the idea previously presented in \cite{gritzmann} of playing the game of Battleship with radar.  We imagine in our game that radar takes the form of a series of powerful X-ray beams which are fired down rows and columns of the Battleship board.  By observing the ratio of the original and final beam intensity, we can obtain a measurement of the number of ships that the beam passed through.  In the game, this is implemented in terms of the sum of the occupied spaces in any particular row or column.  This leads us to a very natural question: if we know all of the radar data (eg. all row and column sums), do we know the exact spots that the fleet occupies?  If not how many possibilities are there?  To our knowledge, results in this context are absent from the literature.
+
+Impulsively, one may guess that knowing all the row and column sums will dictate the fleets entire placement.  However, we have shown that on average a particular sequence of row and column sums will have more than $50$ associated fleet placements!
+The current pursuit of this research is to address the following goal.
+\begin{ugoal}
+Obtain an explicit description of equivalence classes of Battleship board states having identical row and column sums.
+\end{ugoal}
+This is very related to the motivating problem of binary discrete tomography: reconstructing a binary matrix from knowledge of its row and column sums.  There, tomographically equivalent matrices are classified by Ryser 1957 in terms of 4-switches.
+In contrast, the binary matrices we consider are hardly random as they are generated by positioning ships of certain sizes.  We aim to explore by what means we may classify our matrices under this significant constraint.
+Future results will be submitted for publication.
+The PI also anticipates connections to discrete time-and-band limiting operators with a discrete analog of the prolate spheroidal property relevant to the first project.
+Notably, time-and-band limiting operators are principle examples of integral operators with the prolate spheroidal property.
+
+\subsection{Previous undergraduate research, graduate research, and outreach}
+Through teaching, mentoring, and outreach the PI has demonstrated a consistent commitment to improving the mathematical community and providing opportunities to communities historically excluded from opportunities for mathematical learning and advancement.
+As a service to the wider mathematical community, the PI is a reviewer for Zentralblatt and has worked as a referee for Communications in Mathematical Physics, Studies in Applied Mathematics, the International Electronic Journal of Geometry, and the Journal of Approximation Theory.
+The PI has also acted as a mentor for both graduate and undergraduate students in mathematics and related disciplines.
+During the summer of 2015, the PI organized a student-run seminar in algebraic geometry at Los Alamos National Laboratory (LANL).
+The PI was also a co-mentor with Balu Nadiga at the 2017 Computational Physics Summer School at LANL on geophysics.
+%ties into the PI's research both in terms of the KdV and KP equations and time and band-limiting \cite{simons}.
+
+During 2016-2017 as a graduate student the PI volunteered as a mentor in the Washington Experimental Mathematics Laboratory (WXML), where he worked with Sara Billy to guide a dedicated group of undergraduates on a research project using machine learning to recognize graphs in pdf images.
+The ultimate goal of this project was to create an analog of the Online Encyclopedia of Integer Sequences for graphs, which other mathematicians may use to identify novel connections between fields.
+
+The PI's outreach has also extended beyond traditional educational opportunites.
+During 2015 and 2016, the PI volunteered as an instructor for two courses in college algebra at the Washington Correction Center for Women as part of the Freedom Education Project of Puget Sound (FEPPS).
+The goal of FEPPS is to provide rigorous accredited college courses to incarcerated women in order to reduce recidivism and offer new economic stability and meaningful employment in the future.
+
+%As an NSF grant recipient, I will continue my outreach and community involvement and expand my outreach efforts in new ways.
+%I will also start an undergraduate research group at LSU exploring applications of OMPs to real-world problems like the nonlinear eigenvalue problem.
+%To contribute to supporting these marginalized communities, the PI will seek multiple opportunities for mathematical outreach, focusing specifically on outreach opportunities impacting racially diverse and economically disadvantaged populations.
+\subsection{Future Impacts}
+As an NSF Grant recipient, the PI intends to seek out additional opportunites for broader impacts.
+These efforts will include focused outreach for communities which have been historically excluded from mathematics for socioeconomic reasons.
+California State University Fullerton (CSUF), the PI's home institution serves a population atypical of many universities: it is majority hispanic and asian and features a large population of older students.
+As outlined above, the PI is currently engaged in multiple research projects with undergraduate collaborators.
+By continuing to provide real research experiences to members of traditionally underserved communities, the PI will promote pathways to graduate education and increased diversity in the greater mathematics community.
+
+\noindent\textbf{Promoting Mathematical Exploration Online}
+The current pandemic has underscored the importance of online teaching, mentorship, and communication in training the next generation of STEM professionals.
+At CSUF, the PI is currently working on curriculum development on an online course on mathematical methods of problem solving, aimed at using board games and contest problems to informally introduce first-year math majors to some of the flavors of advanced mathematics, even before they are through the calculus sequence.
+These have inspired undergraduate research projects in addition to the ones described above, including an ongoing collaboration with Christopher Lewis, a computer science student at CSUF, exploring random graphs through the game MicroRobots.
+The PI has also hosted an competition on programming optimal Battleship strategies, which continues to inspire students to ask interesting questions with obvious applications to pure and applied mathematics.
+The PI proposes to create a robust collection of publicly available online game-related questions and puzzles, appropriate for a variety of backgrounds at both the high school and collegiate level, to inspire additional inquiry and participation in STEM.
+
+%The PI proposes to organize an interdisciplinary virtual seminar at CSUF promoting graduate school and career opportunites in STEM by recruiting speakers from multiple fields to give talks about their work.
+%The PI has multiple professional connections at multiple universities (both faculty and students), Los Alamos National Lab, and in the tech industry that they intend to leverage in order to create the first series of talks.
+%By increasing awareness and knowledge at the CSUF community, the PI intends to promote the participation of traditional minorities in STEM.
+%As a hispanic-serving institution, CSUF is an ideal location for a seminar like this one to promote diversity in STEM.
+
+\newpage
+
+\nocite{*}
+\setcounter{page}{1}
+\bibliography{desc}
+
+\end{document}

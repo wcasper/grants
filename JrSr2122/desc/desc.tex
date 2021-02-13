@@ -1,0 +1,122 @@
+
+%%%%%%%%% MASTER -- compiles the 6 sections
+
+\documentclass[12pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\bibliographystyle{plain}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{enumerate}
+\usepackage{mathptmx}
+
+\theoremstyle{definition}
+\newtheorem{goal}{Project}
+\newtheorem{subgoal}{Subgoal}[goal]
+\newtheorem{thm}{Theorem}
+\newtheorem{quest}{Question}
+
+\newcommand{\bbr}{\mathbb{R}}
+\newcommand{\bbc}{\mathbb{C}}
+\newcommand{\vocab}[1]{\textbf{#1}}
+\newcommand{\Gr}{\text{Gr}}
+
+\pagestyle{empty}
+%\includeonly{NSFsumm}
+
+\begin{document}
+
+\required{Algebraic Generalizations of the Fourier Transform}
+\begin{center}
+William Riley Casper
+\end{center}
+
+\subsection*{\hfil 1. Project Description (971 words)\hfil}
+
+\noindent\textbf{Purpose and Merit (430 words)}
+The Fourier transform is one of the most useful mathematical tools known today.  It is central to our understanding of a huge spectrum of topics, from Heisenberg's uncertainty principal in quantum mechanics to the relationship between audio quality and bandwidth on your mobile phone \cite{shannon1}.
+This project will explore new generalizations of the Fourier transform which have recently played a role in solving multiple long-standing open problems in pure mathematics.
+
+In Heisenberg's description of the quantum world, quantities that we are able to see and measure are called \textit{observables}.  Mathematically, each observable is represented by a unique, special symbol called an \textit{operator} \cite{sakurai}.  For example, imagine a very tiny particle wandering around a room.  Our observables are things like the particle's location and momentum, represented by the special operator symbols $x$ and $\partial$.  Since we can add and multiply measurements, we can likewise add and multiply observables, giving new operators like $x+\partial$ and $x\partial$.  In this way, the collection of all observables is a very special object, called an \textit{operator algebra}.
+In this quantum point of view, the Fourier transform becomes a mathematical machine which naturally rearranges measurements, interchanging $x$ and $\partial$.
+
+In recent work, the PI and his collaborators have considered abstractions of the Fourier transform coming from other operator algebras, called \textit{Fourier algebras}, which mimic operator algebras in quantum mechanics.  Each Fourier algebra has its own generalization of a Fourier transform.  These novel generalizations have proven to be extremely significant via their pivotal role in the PI's solutions of two long-standing open problems in pure mathematics, leading to publications in extremely prestigious journals \cite{CGYZ,CGYZ2,CY2019,CY2018}.  Consequently, there is exceptional merit in the continued exploration of Fourier algebras and their applications.
+Furthermore, while the theory motivating these solutions is deep, the Fourier algebras themselves are charmingly simple to define, requiring only some knowledge of basic calculus.  Thus a hands-on exploration of Fourier algebras lends itself readily to undergraduate research.
+
+This project proposes to expand the PI's study and application of Fourier algebras to pure mathematics, in particular to integrable systems, with an emphasis on new collaborative work with undergraduate students.
+The primary purpose is to explore specific instances of Fourier algebras relelvant to other areas of mathematics, particularly in representation theory and spectral theory, with the goal of generating further publications in high-level journals.  The secondary purpose is to create research opportunities and coauthor publications with the joint goals of (1) increasing the advantage of CSUF students applying to graduate school, and (2) building a undergraduate mentorship track record which can be leveraged to secure external funding for further undergraduate research support.
+
+
+\newpage
+\noindent\textbf{Procedures and Methodology (292 words)}
+The PI has developed software which can be used to explore operator algebras
+symbolically on the computer using Python and Sympy.  Using this software,
+the PI has been able to identify a universal description of the algebraic
+structure that these algebras contain, connecting them with diverse other
+branches of mathematics, including algebraic geometry, representation theory,
+and integrable systems.  Leveraging a combination of software and theory, the
+PI proposes to discover new, explicit expression of generalized Fourier
+transforms.
+
+\textbf{March-May:} The PI will focus on preliminary numerical calculations
+of specific examples of Fourier algebras, focusing on deriving
+explicit formulas for generalized Fourier maps.  
+
+Simultaneously, the PI will develop instructional materials intended to jump start a student researcher with the background material necessary to explore
+Fourier algebras in detail, beginning with a review of Fourier transforms.
+
+\textbf{June:} The student researcher and the PI will meet daily to discuss
+background material and begin to engage with research related software,
+studying examples of Fourier algebras that the PI has already explored in
+detail.  Meanwhile the PI will work toward connecting specific results to
+general theorems fitting into his broader research agenda.
+
+\textbf{July:} At this point the student should be competent in the software
+and familiar enough with the mathematical techniques to explore new examples
+of Fourier algebras independently.  For each example, they will try to
+describe the associated generalized Fourier transform.
+
+\textbf{August:} Students will summarize their results and generate a poster
+presentation in anticipation of presenting at undergraduate research
+conferences, including the MAA Undergraduate Research Poster Session.  The PI
+will simultaneously prepare results to be submitted to International Math
+Research Notices or J. Approximation Theory.
+
+At the start of the new term, the PI and the student researcher will meet to
+summarize progress and discuss future efforts.
+
+\newpage
+\noindent\textbf{Applicant Qualifications (249)}
+
+The PI's publication record is extremely strong, featuring publications in mathematics journals widely considered to be among the best in the world, including Crelle's Journal, the American Journal of Mathematics, and Proceedings of the National Academy of Sciences.  Additionally, the PI has a strong history of research dissemination through invitations to speak at conferences and workshops, including national meetings sponsored by the AMS and AIMS, and international meetings such as ICM and CMS.  The PI's research has also resulted in invitations to visit and give talks at several universities, including UC Berkeley, U Oregon, Radboud University in the Netherlands, Stockholm University in Sweden, UNAM in Mexico, and the University of Cordoba in Argentina.
+
+The PI is actively engaged in the broader mathematical community as a referee for Communications in Mathematical Physics, the Journal of Approximation Theory, the SIAM Journal on Mathematical Analysis, and Studies in Applied Mathematics.
+
+The PI's mentorship record includes mentoring students in both the Washington Experimental Mathematics Laboratory, and a Computational Physics Summer School at Los Alamos National Laboratory.  Currently, the PI is working with four undergraduate students at CSUF on various research projects related to the proposed topic.  
+
+The undergraduate research experience and publications advance the PI's scholarly agenda by strengthening the PI's profile for applying for a research grant in Algebra and Number Theory through the NSF in the future.  Simultaneously, this project bolsters PI's track record of undergraduate research mentorship in anticipation of applying for funding for further undergraduate research opportunities at CSUF.
+
+\newpage
+\bibliography{desc}
+
+\end{document}
+

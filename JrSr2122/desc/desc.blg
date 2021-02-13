@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2020 Gentoo Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: desc.aux
+The style file: plain.bst
+Database file #1: desc.bib
+You've used 6 entries,
+            2118 wiz_defined-function locations,
+            532 strings with 4936 characters,
+and the built_in function-call counts, 1642 in all, are:
+= -- 153
+> -- 92
+< -- 0
++ -- 38
+- -- 30
+* -- 101
+:= -- 301
+add.period$ -- 17
+call.type$ -- 6
+change.case$ -- 33
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 58
+empty$ -- 118
+format.name$ -- 30
+if$ -- 325
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 5
+newline$ -- 32
+num.names$ -- 12
+pop$ -- 34
+preamble$ -- 1
+purify$ -- 27
+quote$ -- 0
+skip$ -- 47
+stack$ -- 0
+substring$ -- 57
+swap$ -- 6
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 0
+while$ -- 14
+width$ -- 7
+write$ -- 62

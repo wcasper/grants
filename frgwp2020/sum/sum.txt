@@ -1,0 +1,37 @@
+Project Summary
+William Riley Casper
+Overview. The National Science Foundation Division of Mathematical Sciences annually accepts
+proposals for research projects in algebra and number theory, with funding for research related
+equipment, travel expenses, conference support and summer salary for up to three years (for
+2020, see NSF PD 20-1264). The following research summary is intended for pursuing funding
+for research through this program during the 2021 funding cycle. The project below fits well in
+line with the NSF’s goal of generating new knowledge in science and mathematics, and with the
+specific program’s target of supporting research in algebra, algebraic and arithmetic geometry,
+number theory, and representation theory.
+Background. In the algebraic theory of the Kadomtsev-Petviashvili (KP) equation, algebraic
+geometry is used to produce expressions for exact solutions u(x, y, t) of the KP equation
+uxt + uux + uxxx ± uyy = 0,
+
+(1)
+
+and more generally solutions of a system of nonlinear partial differential equations called the KP
+hierarchy. The KP equation arises naturally in geophysical fluid dynamics and, incredibly, in
+algebraic geometry via Shiota’s solution of the Schottky problem [?].
+Solutions of the KP hierarchy are determined by the orbits of points in an infinite dimensional
+space, Sato’s grassmannian Gr, under the action of a loop group. Special “geometric” points of
+Sato’s grassmannian have finite dimensional orbits, and the assocated action may be redescribed
+in terms of the action of an abelian variety. Specifically, Krichever correspondence associates
+a geometric point of Gr to a vector bundle on an algebraic curve, creating explicit solutions
+of the KP equation in terms of theta functions. Motivated by these connections, the proposed
+research project will discover new applications of integrable systems to noncommutative algebra
+and algebraic geometry and vice versa, expanding on recent results of the PI which fit the same
+theme [?, ?, ?, ?]. With Sato’s grassmannian as our centerpiece, we will interpret classes of
+geometric and nongeometric points in a variety of ways: as integral operators, as commutative
+families of fractional differential operators, and as Darboux transformations. In the first project,
+the KP dynamics will inform our study of the spectral theory of integral operators, allowing us to
+discover a new, universal description of the spectral data of prolate-spheroidal integral operators.
+The second project will follow up by describing new solutions of the KP hierarchy involving nongeometric points interpreted as commuting algebras of fractional differential operators. Finally,
+the third project will explore a vector-valued adelic-type grassmannian as a classifying space of
+noncommutative bispectral Darboux transformations of orthogonal matrix polynomials.
+
+

@@ -1,0 +1,96 @@
+
+%%%%%%%%% MASTER -- compiles the 6 sections
+
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\bibliographystyle{plain}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{enumerate}
+
+\theoremstyle{definition}
+\newtheorem{goal}{Project}
+\newtheorem{subgoal}{Subgoal}[goal]
+\newtheorem{thm}{Theorem}
+\newtheorem{quest}{Question}
+
+\newcommand{\bbr}{\mathbb{R}}
+\newcommand{\bbc}{\mathbb{C}}
+\newcommand{\vocab}[1]{\textbf{#1}}
+\newcommand{\Gr}{\text{Gr}}
+
+\pagestyle{empty}
+%\includeonly{NSFsumm}
+
+\begin{document}
+
+\required{Project Summary}
+\begin{center}
+William Riley Casper
+\end{center}
+
+\begin{enumerate}[(1)]
+\item{\textbf{Overview.}}
+This proposal expands the study of noncommutative algebras of differential operators arising naturally from (1) prolate-spheroidal integral operators, (2) commuting fractional differential operators, and (3) matrix-valued orthogonal polynomials.
+Via noncommutative algebra and algebraic geometry, the following projects address important gaps in the literature on bispectrality, orthogonal matrix polynomials, and integrable systems.
+\begin{goal}\label{goal1}
+Perform asymptotic spectral analysis of self-adjoint integral operators with the prolate spheroidal property, parameterized by symmetric points in a Calogero-Moser space.
+Leverage algebraic geometry to obtain a universal description of the spectra of the family of integral operators defined by points in a Calogero-Moser flow.
+\end{goal}
+\begin{goal}\label{goal2}
+Extend Burchnall-Chaundy Theory and Krichever correspondence to commuting algebras of fractional differential operators.
+Leverage this to parameterize solutions of KP hierarchy in terms of the action of a Picard group on sections of the dual of a jet bundle.
+\end{goal}
+\begin{goal}\label{goal3}
+Construct explicit bispectral Darboux transformations for orthogonal matrix-valued polynomials of Hermite type.
+Obtain a precise description of the corresponding adelic-type classifying space.
+Leverage this description to obtain examples of matrix-valued prolate-spheroidal integral operators.
+\end{goal}
+\item{\textbf{Intellectual Merit.}}
+All three projects are united by Sato's grassmannian $\Gr$, the adelic grassmannian $\Gr^{ad}$, and their generalizations:
+the union of Calogero-Moser spaces is homeomorphic to the adelic grassmannian so that Calogero-Moser flows are KP flows; bispectral Darboux transformations are classified in known cases by generalizations of $\Gr^{ad}$; geometric points of $\Gr$ parameterize vector bundles on projective curves.
+Commuting pairs of fractional differential operators correspond to points of $\Gr$ which are not geometric, but which via the PI's extended Krichever correspondence are given a geometric interpretation in terms of sections of the dual of the jet bundle $J^\infty(\pi)$ on line bundle $\pi: E\rightarrow X$ over an algebraic curve.
+
+Motivated by the natural formulation of KP flows of geometric points in terms of the action of the Picard group of the associated projective curve, the PI proposes to determine a similar formulation for commuting fractional differential operators via a natural action of the Picard group on jet bundles.  This paves the way for new exact formulations of solutions to equations in the KP hierarchy in terms of algebro-geometric data in Project 2.
+Additionally our projects are linked by the presence of Fourier algebras, noncommutative operator algebras attached to points in a (generalized) adelic grassmannian of bispectral functions.
+This algebra is key to the construction of the integral operators in Project 1, whose spectral data will lend new insight into eigenvalue distributions from random matrix ensembles.
+Furthermore the Fourier algebra was the main ingredient in the classification of the noncommutative bispectral Darboux transformations Project 3, and will be essential in their proposed adelic parameterization.
+%Attaining the above goals will greatly contribute to our current understanding of three important topics: orthogonal matrix polynomials, bispectral operators, and higher dimensional McKay correspondence.
+%The PI's results on the first goal will refine the PIs recent classification theorem for the matrix Bochner problem and will directly link the behavior of $\tau$-spherical functions on compact rank $1$ Gelfand pairs $(G,K)$ to orthogonal matrix polynomials.
+%This platform by which both phenomena may be studied will play a pivotal role at the intersection of integrable systems and representation theory.
+
+%In pursuit of the second goal, the PI will solve a long-standing open problem in the literature on bispectral differential operators.
+%Additionally, the method used will expand on very recent applications of Fourier-Mukai transforms in the study of commuting differential operators.
+%
+%The third goal provides a novel perspective from which to study derived equivalence for quotient spaces.
+%Specifically, we will develop certain generalizations of Cherednik algebras which will act as noncommutative crepant resolutions of symplectic quotient singularites.
+%Using this method we can hope to address an important conjecture of Reid on derived eqivalence for McKay correspondence in higher dimensions.
+
+\item{\textbf{Broader Impacts.}}
+The PI has demonstrated his commitment ot having a positive broader impact on his community through his volunteer work teaching mathematics to underprivileged groups, mentorship of younger students, and service to the greater mathematics community.
+Specific examples include his lecturing in the Freedom Education Project and his mentoring of students in summer schools and undergraduate research groups.
+He has previously and will continue to broadly disseminate his research in the form of journal publications and frequent talks at domestic and international conferences.
+In the future the PI will work to increase his impact on the mathematical community by actively searching for opportunities to help organize conferences and create and grow research seminars.
+\end{enumerate}
+\end{document}
+

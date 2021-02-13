@@ -1,0 +1,81 @@
+
+%%%%%%%%% MASTER -- compiles the 6 sections
+
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\bibliographystyle{plain}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{enumerate}
+
+\theoremstyle{definition}
+\newtheorem{goal}{Project}
+\newtheorem{subgoal}{Subgoal}[goal]
+\newtheorem{thm}{Theorem}
+\newtheorem{quest}{Question}
+
+\newcommand{\bbr}{\mathbb{R}}
+\newcommand{\bbc}{\mathbb{C}}
+\newcommand{\vocab}[1]{\textbf{#1}}
+\newcommand{\Gr}{\text{Gr}}
+
+\pagestyle{empty}
+%\includeonly{NSFsumm}
+
+\begin{document}
+
+\required{Project Summary}
+\begin{center}
+William Riley Casper
+\end{center}
+
+\begin{enumerate}[(1)]
+\item{\textbf{Overview.}}
+Algebro-geometric techniques in integrable systems have been an active point of continued research and expansion since their conception in the 1980's, in part because of the unusual connections they inspire between algebra and physics.
+However, this retained interest has led to numerous interesting and long-standing questions in the field.  Very recently, work of the PI and his collaborators has resolved two long-standing open problems: the connection between prolate-spheroidal integral operators and bispectrality, and the matrix Bochner problem.  Central to these advances is the analysis of points of an infinite dimensional classifying space, Sato's grassmannian, in terms of a natural noncommutative algebra called the Fourier algebra.
+The Fourier algebra continues to present a gateway to numerous further generalizations and advances in the field of integrable systems and special functions.  Using this gateway, the following projects address important knowledge gaps on bispectrality, orthogonal matrix polynomials, and integrable systems.
+\begin{goal}\label{goal1}
+Perform asymptotic spectral analysis of self-adjoint integral operators with the prolate spheroidal property, parameterized by symmetric points in a Calogero-Moser space.
+\end{goal}
+\begin{goal}\label{goal2}
+Describe the rational reduction of the KP hierarchy in terms of the action of a Picard group on sections of the dual of a jet bundle $J^\infty(\pi)$ on a line bundle over a curve.
+\end{goal}
+\begin{goal}\label{goal3}
+Construct explicit bispectral Darboux transformations for orthogonal matrix-valued polynomials of Hermite type.
+\end{goal}
+\item{\textbf{Intellectual Merit.}}
+All three projects above are united by the broad applicability of noncommutative algebra and algebraic geometry in the context of integrable systems.
+The first project will discover new and beautiful ties between integrable systems, spectral theory, and random matrix theory, building dramatically on the famous examples of Airy and Bessel integral operators first explored by Tracy and Widom but with a unique connection to Calogero-Moser systems.
+The second project provides a direct geometric interpretation of the rational reduction of the KP hierarchy, simultaneously broadening our understanding of a wide class of solutions of integrable PDEs and our understanding of Sato's grassmannian.
+The third project follows up on the PI's recent solution of the matrix Bochner problem, and provides a wide basis of investigation for matrix-valued prolate spheroidal integral operators, a topic of some recent interest, and will result in a wide family of such operators.
+
+\item{\textbf{Broader Impacts.}}
+The PI has demonstrated his commitment to having a positive broader impact on his community through his volunteer work teaching mathematics to underprivileged groups, mentorship of younger students, and service to the greater mathematics community.
+Specific examples include his lecturing in the Freedom Education Project and his mentoring of students in summer schools and undergraduate research groups.
+He has previously and will continue to broadly disseminate his research in the form of journal publications and frequent talks at domestic and international conferences.
+
+One goal of the PI is to broaden the participation of minority and underrepresented groups in STEM.  Supporting the above proposed research, the PI is working with multiple undergraduate students with diverse backgrounds on related mathematics research, with the goal of promoting interest in advanced mathematics study and graduate school.
+Additionally , the PI intends to design and promote a virtual interdisciplinary seminar at CSUF promoting careers in STEM by having speakers from academia and industry provide talks about their work.
+\end{enumerate}
+\end{document}
+

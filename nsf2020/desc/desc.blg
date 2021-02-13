@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: desc.aux
+The style file: plain.bst
+Database file #1: desc.bib
+Warning--I didn't find a database entry for "CIHY"
+Warning--there's a number but no volume in Cafasso
+Warning--empty school in casperthesis
+Warning--there's a number but no volume in duran2004
+Warning--there's a number but no volume in KPR
+You've used 75 entries,
+            2118 wiz_defined-function locations,
+            978 strings with 15014 characters,
+and the built_in function-call counts, 24371 in all, are:
+= -- 2528
+> -- 922
+< -- 15
++ -- 379
+- -- 292
+* -- 1727
+:= -- 4030
+add.period$ -- 234
+call.type$ -- 75
+change.case$ -- 367
+chr.to.int$ -- 0
+cite$ -- 79
+duplicate$ -- 933
+empty$ -- 1966
+format.name$ -- 292
+if$ -- 5063
+int.to.chr$ -- 0
+int.to.str$ -- 75
+missing$ -- 78
+newline$ -- 380
+num.names$ -- 150
+pop$ -- 287
+preamble$ -- 1
+purify$ -- 296
+quote$ -- 0
+skip$ -- 653
+stack$ -- 0
+substring$ -- 1881
+swap$ -- 176
+text.length$ -- 15
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 292
+warning$ -- 4
+while$ -- 270
+width$ -- 77
+write$ -- 834
+(There were 5 warnings)

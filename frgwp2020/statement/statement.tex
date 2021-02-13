@@ -1,0 +1,81 @@
+
+%%%%%%%%% MASTER -- compiles the 6 sections
+
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\bibliographystyle{plain}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{enumerate}
+
+\theoremstyle{definition}
+\newtheorem{goal}{Project}
+\newtheorem{subgoal}{Subgoal}[goal]
+\newtheorem{thm}{Theorem}
+\newtheorem{quest}{Question}
+
+\newcommand{\bbr}{\mathbb{R}}
+\newcommand{\bbc}{\mathbb{C}}
+\newcommand{\vocab}[1]{\textbf{#1}}
+\newcommand{\Gr}{\text{Gr}}
+
+\pagestyle{empty}
+%\includeonly{NSFsumm}
+
+\begin{document}
+
+\required{Personal Statement}
+\begin{center}
+William Riley Casper
+\end{center}
+
+% readiness to submit to an external funding agency
+% background experience and prior accomplishments
+% outline research topic and area of interest 
+% how far into development of research agenda
+
+\begin{enumerate}[]
+\item{\textbf{Background.}}
+I am in my first year as an assistant professor in the Mathematics Department at California State University Fullerton.
+My research experience includes a three-year postdoctoral position at Louisiana State University working with Milen Yakimov and multiple research internships at Los Alamos National Lab.
+I have applied to multiple extramural research grants and fellowships funded by the National Science Foundation, the American Mathematical Society, and the Simons Foundation, including a successful application for an AMS-Simons Travel Grant.
+My research has led to publications in some of the most prestigious journals in my field, including Crelle's Journal, the American Journal of Mathematics, and Proceedings of the National Academy of Sciences.
+
+\item{\textbf{Research Agenda.}}
+My research agenda focuses on leveraging interactions between algebra and integrable systems.
+An algebra is a collection $A$ of objects like the set of whole numbers or the set of real numbers, where the operations of adding objects and multiplying objects are defined.
+Algebras in general are incredibly natural constructions, and show up naturally in vertually every area of mathematics, including analysis, geometry, combinatorics and number theory.
+Integrable systems studies systems of equations arising from physical phenomena where we can explicity solve the equations.
+Consequently, integrable systems connects directly to diverse beautiful phenomena in theoretical physics, such as nonlinear waves and quantum gravity.
+Both topics are connected together via the algebraic theory of certain nonlinear partial differential equations initiated by Krichever, Mumford, Sato, and others.
+
+Leveraging algebraic techniques in the realm of integrable systems, my collaborators and I have been able to approach multiple problems in the related fields of spectral theory, approximation theory, and special functions from a unique perspective.
+So far, our work has solved the following two long-standing open problems in integrable systems and special functions
+\begin{itemize}
+\item the matrix Bochner problem -- the problem of classifying systems of differential equations which are symmetric with respect to a matrix-valued inner product defined by a weight measure
+\item connecting bispectrality and prolate-spheroidal phenomena -- showing that integral operators associated with bispectral functions satisfy the prolate-spheroidal property of commuting with a differential operator
+\end{itemize}
+
+\end{enumerate}
+\end{document}
+

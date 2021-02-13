@@ -1,0 +1,96 @@
+
+%%%%%%%%% MASTER -- compiles the 6 sections
+
+\documentclass[11pt,letterpaper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}                                                      %%
+%%%%%%%%%% EXACT 1in MARGINS %%%%%%%                                   %%
+\setlength{\textwidth}{6.5in}     %%                                   %%
+\setlength{\oddsidemargin}{0in}   %% (It is recommended that you       %%
+\setlength{\evensidemargin}{0in}  %%  not change these parameters,     %%
+\setlength{\textheight}{8.5in}    %%  at the risk of having your       %%
+\setlength{\topmargin}{0in}       %%  proposal dismissed on the basis  %%
+\setlength{\headheight}{0in}      %%  of incorrect formatting!!!)      %%
+\setlength{\headsep}{0in}         %%                                   %%
+\setlength{\footskip}{.5in}       %%                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                   %%
+\newcommand{\required}[1]{\section*{\hfil #1\hfil}}                    %%
+\renewcommand{\refname}{\hfil References Cited\hfil}                   %%
+\bibliographystyle{plain}                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%PUT YOUR MACROS HERE
+
+\usepackage{titlesec}
+\titleformat{\subsubsection}[runin]{\normalfont\bfseries}{\thesubsection}{0.5em}{}[.]
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+\newtheorem*{goal*}{Project Goal}
+\newtheorem{goal}{Project Goal}
+\newtheorem{subgoal}{Subgoal}[goal]
+\newtheorem{thm}{Theorem}
+\newtheorem{quest}{Question}
+\newtheorem{prob}{Problem}
+\newtheorem{defn}{Definition}
+
+\newcommand{\bbr}{\mathbb{R}}
+\newcommand{\bbc}{\mathbb{C}}
+\newcommand{\bbd}{\mathbb{D}}
+\newcommand{\bbp}{\mathbb{P}}
+\newcommand{\bbt}{\mathbb{T}}
+\newcommand{\bbn}{\mathbb{N}}
+\newcommand{\bbz}{\mathbb{Z}}
+\newcommand{\vocab}[1]{\emph{#1}}
+\newcommand{\Ai}{\text{Ai}}
+\newcommand{\Be}{\text{Be}}
+\newcommand{\wt}{\widetilde}
+\newcommand{\End}{\text{End}}
+\newcommand{\triv}{\text{triv}}
+\newcommand{\Coh}{\text{Coh}}
+\newcommand{\Jac}{\text{Jac}}
+\newcommand{\Tau}{\mathcal{T}}
+\newcommand{\Aut}{\text{Aut}}
+\newcommand{\Gr}{\text{Gr}}
+\newcommand{\coker}{\text{coker}}
+\newcommand{\diff}{\backslash}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\id}{\text{id}}
+\newcommand{\mdet}{\text{mdet}}
+\newcommand{\qdet}{\text{qdet}}
+\pagestyle{empty}
+%\includeonly{NSFsumm}
+
+\begin{document}
+
+\begin{center}
+\required{Facilities, Equipment, and Other Resources}
+William Riley Casper
+\end{center}
+
+\section{Computer.}
+The PI has access to multiple computer laboratories maintained at CSUF, containing network printers and computers running multiple operating systems.
+The PI also has a linux workstation for personal use.
+The PI also has an Ipad and a windows laptop for personal use.
+Additionally as a faculty member, the PI may apply for access to the to high-performance computing facilities from the CSUF Center for Computational and Applied Mathematics.
+
+\section{Office.}
+The CSUF Mathematics Department provides the PI with a private office in the mathematics building.
+
+\section{Other Resources.}
+The CSUF Mathemtics Department has staff members on hand who are able to provide
+administrative and technical assistance.  The university library maintains an
+subscriptions to many relevant domestic and international journals as well as
+an extensive collection of books spanning all aspects of pure and applied
+mathematics.
+
+\newpage
+\bibliography{desc}
+
+\end{document}
